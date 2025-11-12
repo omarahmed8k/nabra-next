@@ -1,0 +1,119 @@
+{
+	"hero": {
+		"title": "Get ready for your next",
+		"titleHighlight": "Big Move",
+		"cta": "See Projects"
+	},
+	"partners": {
+		"title": "Standing Tall with Our Esteemed Brand Partners"
+	},
+	"services": {
+		"subtitle": "Discover More on our Moves",
+		"title": "From Idea to Execution",
+		"subtitle2": "We're Your 360-Degree Support!",
+		"items": {
+			"digital": {
+				"title": "Digital Solutions",
+				"description": "Comprehensive digital marketing and web solutions"
+			},
+			"documentaries": {
+				"title": "Documentaries",
+				"description": "Compelling visual storytelling"
+			},
+			"activations": {
+				"title": "Activations",
+				"description": "Engaging brand experiences"
+			},
+			"commercials": {
+				"title": "Commercials and Advertisements",
+				"description": "Professional video production"
+			},
+			"reels": {
+				"title": "Shorts & Reels",
+				"description": "Social media content creation"
+			},
+			"events": {
+				"title": "Event Management",
+				"description": "End-to-end event solutions"
+			},
+			"vfx": {
+				"title": "Visual Effects",
+				"description": "Cutting-edge visual effects"
+			}
+		}
+	},
+	"about": {
+		"subtitle": "About Our Agency",
+		"title": "Established in 2013, we have dedicated ourselves to crafting captivating visual narratives",
+		"description": "Our mission: ignite brands. We transform ideas into immersive experiences across all touchpoints, crafting narratives that inspire, engage, and convert.",
+		"stats": {
+			"experience": {
+				"value": "15+",
+				"label": "YEARS OF EXPERIENCE"
+			},
+			"team": {
+				"value": "50+",
+				"label": "BIG MOVERS"
+			},
+			"projects": {
+				"value": "1000+",
+				"label": "EXCEPTIONAL PROJECTS"
+			},
+			"partners": {
+				"value": "200+",
+				"label": "PARTNERS"
+			}
+		},
+		"cta": "Know More About Us"
+	},
+	"testimonials": {
+		"title": "Our Client Chronicles:",
+		"subtitle": "Stories that Make Us Smile!",
+		"items": {
+			"1": {
+				"text": "The level of expertise, and the smoothness of communication with the team, where they collaborate in order to come up with ideas and solutions.",
+				"author": "MARWAN HEGAZY",
+				"position": "GTM Manager - MENA"
+			},
+			"2": {
+				"text": "The teams that worked on our projects have been very professional and flexible and we always get exactly what we are looking for, if not more.",
+				"author": "MAHIRA HASSAN",
+				"position": "Secretary General"
+			},
+			"3": {
+				"text": "The team take creative approaches for solving problems and great solutions with no hustle.",
+				"author": "AHMED ALI",
+				"position": "Marketing Director"
+			}
+		}
+	},
+	"faq": {
+		"title": "Curious? Check Out the Scoop! (FAQs)",
+		"items": {
+			"1": {
+				"question": "What services do you offer?",
+				"answer": "We provide a comprehensive range of services, including digital marketing, creative design, branding, event management, activations, and strategic consultancy."
+			},
+			"2": {
+				"question": "How much does video production cost?",
+				"answer": "Video production costs vary depending on the scope and complexity of the project. Contact us for a detailed quote."
+			},
+			"3": {
+				"question": "Do you work with businesses of all sizes?",
+				"answer": "Yes, we work with startups, SMEs, and large enterprises across various industries."
+			},
+			"4": {
+				"question": "Can you work with a specific budget?",
+				"answer": "Absolutely! We tailor our solutions to fit your budget while maintaining quality."
+			}
+		}
+	},
+	"cta": {
+		"title": "We're not just marketers, we're your strategists, storytellers, and growth partners."
+	},
+	"contact": {
+		"title": "Got questions, project ideas, or just want to say hi?",
+		"subtitle": "We're all ears!",
+		"cta": "Let's Collaborate"
+	}
+}
