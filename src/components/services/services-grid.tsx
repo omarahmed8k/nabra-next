@@ -18,7 +18,7 @@ export default function ServicesGrid() {
   const t = useTranslations("services");
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-950">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
           {services.map((service, index) => (
@@ -30,21 +30,21 @@ export default function ServicesGrid() {
               transition={{ delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-gray-50 p-10 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="bg-gray-900 p-10 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div
                   className={`w-20 h-20 rounded-full bg-linear-to-r ${service.color} flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform duration-300`}
                 >
                   {service.icon}
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                <h3 className="text-3xl font-bold text-white mb-4">
                   {t(`items.${service.key}.title`)}
                 </h3>
-                <p className="text-lg text-gray-600 mb-6">
+                <p className="text-lg text-gray-300 mb-6">
                   {t(`items.${service.key}.description`)}
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 transition-colors duration-200"
+                  className="inline-flex items-center text-[#8b2490] font-semibold hover:text-[#501454] transition-colors duration-200"
                 >
                   Learn More
                   <span className="ml-2">→</span>

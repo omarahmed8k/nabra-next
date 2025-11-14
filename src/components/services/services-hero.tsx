@@ -14,7 +14,7 @@ export default function ServicesHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-orange-500 font-semibold mb-4 uppercase tracking-wider">
+          <p className="text-[#8b2490] font-semibold mb-4 uppercase tracking-wider">
             {t("subtitle")}
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">

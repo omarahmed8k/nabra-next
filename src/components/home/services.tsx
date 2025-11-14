@@ -17,7 +17,7 @@ export default function Services() {
   const t = useTranslations("services");
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-950">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,10 +25,10 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-orange-500 font-semibold mb-4 uppercase tracking-wider">
+          <p className="text-[#8b2490] font-semibold mb-4 uppercase tracking-wider">
             {t("subtitle")}
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {t("title")}
           </h2>
           <p className="text-xl text-gray-600">{t("subtitle2")}</p>
@@ -42,12 +42,12 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
             >
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-xl font-bold text-white mb-2">
                 {t(`items.${service.key}.title`)}
               </h3>
               <p className="text-gray-600">

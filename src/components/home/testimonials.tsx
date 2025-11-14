@@ -21,7 +21,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-950">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,10 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
             {t("title")}
           </h2>
-          <p className="text-2xl text-orange-500 font-semibold">
+          <p className="text-2xl text-[#8b2490] font-semibold">
             {t("subtitle")}
           </p>
         </motion.div>
@@ -45,22 +45,22 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="bg-gray-50 p-12 rounded-2xl"
+              className="bg-gray-900 p-12 rounded-2xl"
             >
-              <p className="text-xl md:text-2xl text-gray-700 mb-8 italic">
+              <p className="text-xl md:text-2xl text-gray-300 mb-8 italic">
                 "{t(`items.${testimonials[activeIndex]}.text`)}"
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-linear-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-16 h-16 bg-linear-to-br from-[#501454] to-[#8b2490] rounded-full flex items-center justify-center text-white font-bold text-xl">
                   {t(`items.${testimonials[activeIndex]}.author`)
                     .charAt(0)
                     .toUpperCase()}
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900">
+                  <p className="font-bold text-white">
                     {t(`items.${testimonials[activeIndex]}.author`)}
                   </p>
-                  <p className="text-gray-600">
+                  <p className="text-gray-400">
                     {t(`items.${testimonials[activeIndex]}.position`)}
                   </p>
                 </div>
@@ -72,14 +72,14 @@ export default function Testimonials() {
           <div className="flex justify-center gap-4 mt-8">
             <button
               onClick={prev}
-              className="w-12 h-12 rounded-full bg-gray-200 hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center justify-center font-bold"
+              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#501454] hover:text-white transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
               aria-label="Previous testimonial"
             >
               ←
             </button>
             <button
               onClick={next}
-              className="w-12 h-12 rounded-full bg-gray-200 hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center justify-center font-bold"
+              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#501454] hover:text-white transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
               aria-label="Next testimonial"
             >
               →
@@ -94,8 +94,8 @@ export default function Testimonials() {
                 onClick={() => setActiveIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === activeIndex
-                    ? "bg-orange-500 w-8"
-                    : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-[#8b2490] w-8"
+                    : "bg-gray-700 hover:bg-gray-600"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

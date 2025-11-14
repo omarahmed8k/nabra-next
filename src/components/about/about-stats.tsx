@@ -21,7 +21,7 @@ export default function AboutStats() {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600 mb-2">
+              <div className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#501454] to-[#8b2490] mb-2">
                 {t(`stats.${stat}.value`)}
               </div>
               <div className="text-sm md:text-base text-gray-400 font-semibold uppercase tracking-wider">

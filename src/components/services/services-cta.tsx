@@ -5,7 +5,7 @@ import { Link } from "@/i18n/routing";
 
 export default function ServicesCTA() {
   return (
-    <section className="py-20 bg-linear-to-br from-orange-500 to-red-600 text-white">
+    <section className="py-20 bg-linear-to-br from-[#501454] to-[#8b2490] text-white">
       <div className="container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export default function ServicesCTA() {
           </h2>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-white text-orange-500 font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            className="inline-block px-8 py-4 bg-white text-[#501454] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             Get in Touch
           </Link>

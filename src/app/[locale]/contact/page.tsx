@@ -10,7 +10,7 @@ export default function ContactPage() {
       <ContactHero />
       
       {/* Contact Form & Info */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-950">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             <ContactForm />

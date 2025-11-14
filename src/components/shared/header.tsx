@@ -39,7 +39,7 @@ export default function Header() {
             {/* Logo */}
             <Link 
               href="/" 
-              className="relative text-2xl font-bold text-black dark:text-white transition-all duration-300 hover:scale-105"
+              className="relative text-2xl font-bold text-white transition-all duration-300 hover:scale-105"
             >
               Nabra
             </Link>
@@ -58,15 +58,15 @@ export default function Header() {
                   href={item.href}
                   className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${
                     pathname === item.href
-                      ? "text-[#501454] dark:text-[#8b2490]"
-                      : "text-gray-700 dark:text-gray-200 hover:text-[#501454] dark:hover:text-[#8b2490]"
-                  } hover:bg-black/5 dark:hover:bg-white/5`}
+                      ? "text-[#8b2490]"
+                      : "text-gray-200 hover:text-[#8b2490]"
+                  } hover:bg-white/5`}
                 >
                   {item.label}
                   {pathname === item.href && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute inset-0 bg-[#501454]/10 dark:bg-[#8b2490]/10 rounded-lg -z-10"
+                      className="absolute inset-0 bg-[#8b2490]/10 rounded-lg -z-10"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -86,7 +86,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg transition-all duration-300"
+              className="md:hidden p-2 text-gray-200 hover:bg-white/5 rounded-lg transition-all duration-300"
               aria-label="Toggle menu"
             >
               <svg
@@ -128,8 +128,8 @@ export default function Header() {
                   href={item.href}
                   className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
                     pathname === item.href
-                      ? "bg-[#501454]/10 text-[#501454] dark:text-[#8b2490]"
-                      : "text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/5 hover:text-[#501454]"
+                      ? "bg-[#501454]/10 text-[#8b2490]"
+                      : "text-gray-200 hover:bg-white/5 hover:text-[#501454]"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

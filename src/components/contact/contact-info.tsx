@@ -32,21 +32,21 @@ export default function ContactInfo() {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-4xl font-bold text-gray-900 mb-8">
+      <h2 className="text-4xl font-bold text-white mb-8">
         Contact Information
       </h2>
 
       <div className="space-y-8">
         {contactInfo.map((info, index) => (
-          <div key={index} className="bg-gray-50 p-6 rounded-2xl">
+          <div key={index} className="bg-gray-900 p-6 rounded-2xl">
             <div className="flex items-start gap-4">
-              <div className="text-3xl">{info.icon}</div>
+              <div className="text-4xl">{info.icon}</div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {info.title}
                 </h3>
                 {info.details.map((detail, idx) => (
-                  <p key={idx} className="text-gray-600">
+                  <p key={idx} className="text-gray-300">
                     {detail}
                   </p>
                 ))}
@@ -58,13 +58,13 @@ export default function ContactInfo() {
 
       {/* Social Media */}
       <div className="mt-8">
-        <h3 className="text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+        <h3 className="text-xl font-bold text-white mb-4">Follow Us</h3>
         <div className="flex gap-4">
           {["Facebook", "Instagram", "LinkedIn", "Twitter"].map((social) => (
             <a
               key={social}
               href="#"
-              className="w-12 h-12 rounded-full bg-gray-200 hover:bg-linear-to-r hover:from-orange-500 hover:to-red-600 hover:text-white transition-all duration-300 flex items-center justify-center font-bold"
+              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-linear-to-r hover:from-[#501454] hover:to-[#8b2490] hover:text-white transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
               aria-label={social}
             >
               {social[0]}

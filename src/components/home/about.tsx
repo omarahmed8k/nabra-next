@@ -18,7 +18,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-orange-500 font-semibold mb-4 uppercase tracking-wider">
+          <p className="text-[#8b2490] font-semibold mb-4 uppercase tracking-wider">
             {t("subtitle")}
           </p>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto">
@@ -39,7 +39,7 @@ export default function About() {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600 mb-2">
+              <div className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#501454] to-[#8b2490] mb-2">
                 {t(`stats.${stat}.value`)}
               </div>
               <div className="text-sm md:text-base text-gray-400 font-semibold uppercase tracking-wider">
@@ -57,7 +57,7 @@ export default function About() {
         >
           <Link
             href="/about"
-            className="inline-block px-8 py-4 border-2 border-orange-500 text-orange-500 font-semibold rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300"
+            className="inline-block px-8 py-4 border-2 border-[#501454] text-[#8b2490] font-semibold rounded-full hover:bg-[#501454] hover:text-white transition-all duration-300"
           >
             {t("cta")}
           </Link>

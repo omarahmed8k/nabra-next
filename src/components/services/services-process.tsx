@@ -27,7 +27,7 @@ const processSteps = [
 
 export default function ServicesProcess() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,10 +35,10 @@ export default function ServicesProcess() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Process
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             We follow a proven methodology to deliver exceptional results
           </p>
         </motion.div>
@@ -53,13 +53,13 @@ export default function ServicesProcess() {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600 mb-4">
+              <div className="text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#501454] to-[#8b2490] mb-4">
                 {process.step}
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <h3 className="text-2xl font-bold text-white mb-3">
                 {process.title}
               </h3>
-              <p className="text-gray-600">{process.description}</p>
+              <p className="text-gray-400">{process.description}</p>
             </motion.div>
           ))}
         </div>

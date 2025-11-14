@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600">
+            <h3 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-linear-to-r from-[#501454] to-[#8b2490]">
               Nabra
             </h3>
             <p className="text-gray-400">
@@ -25,7 +25,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                  className="text-gray-400 hover:text-[#8b2490] transition-colors duration-200"
                 >
                   About Us
                 </Link>
@@ -33,7 +33,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                  className="text-gray-400 hover:text-[#8b2490] transition-colors duration-200"
                 >
                   Services
                 </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/projects"
-                  className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                  className="text-gray-400 hover:text-[#8b2490] transition-colors duration-200"
                 >
                   Projects
                 </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-400 hover:text-orange-500 transition-colors duration-200"
+                  className="text-gray-400 hover:text-[#8b2490] transition-colors duration-200"
                 >
                   Contact
                 </Link>
@@ -83,28 +83,28 @@ export default function Footer() {
         <div className="flex justify-center gap-6 mb-8">
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 transition-colors duration-200 flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#501454] transition-colors duration-200 flex items-center justify-center"
             aria-label="Facebook"
           >
             F
           </a>
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 transition-colors duration-200 flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#501454] transition-colors duration-200 flex items-center justify-center"
             aria-label="Instagram"
           >
             I
           </a>
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 transition-colors duration-200 flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#501454] transition-colors duration-200 flex items-center justify-center"
             aria-label="LinkedIn"
           >
             L
           </a>
           <a
             href="#"
-            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 transition-colors duration-200 flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#501454] transition-colors duration-200 flex items-center justify-center"
             aria-label="Twitter"
           >
             T

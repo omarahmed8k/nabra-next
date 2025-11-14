@@ -28,8 +28,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body className="antialiased">
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className="dark">
+      <body className="antialiased bg-[#0a0a0a] text-white">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>

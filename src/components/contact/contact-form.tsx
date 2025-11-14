@@ -40,14 +40,14 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-4xl font-bold text-gray-900 mb-8">
+      <h2 className="text-4xl font-bold text-white mb-8">
         Send us a message
       </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
             htmlFor="name"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-gray-300 font-semibold mb-2"
           >
             Full Name *
           </label>
@@ -58,7 +58,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
             placeholder="John Doe"
           />
         </div>
@@ -66,7 +66,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-gray-300 font-semibold mb-2"
           >
             Email Address *
           </label>
@@ -77,7 +77,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
             placeholder="john@example.com"
           />
         </div>
@@ -85,7 +85,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="phone"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-gray-300 font-semibold mb-2"
           >
             Phone Number
           </label>
@@ -95,7 +95,7 @@ export default function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
             placeholder="+20 111 860 0015"
           />
         </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="company"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-gray-300 font-semibold mb-2"
           >
             Company Name
           </label>
@@ -113,7 +113,7 @@ export default function ContactForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
             placeholder="Your Company"
           />
         </div>
@@ -121,7 +121,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="message"
-            className="block text-gray-700 font-semibold mb-2"
+            className="block text-gray-300 font-semibold mb-2"
           >
             Message *
           </label>
@@ -132,14 +132,14 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all duration-200 resize-none"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200 resize-none"
             placeholder="Tell us about your project..."
           />
         </div>
 
         <button
           type="submit"
-          className="w-full px-8 py-4 bg-linear-to-r from-orange-500 to-red-600 text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105"
+          className="w-full px-8 py-4 bg-linear-to-r from-[#501454] to-[#8b2490] text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-[#501454]/50 transition-all duration-300 transform hover:scale-105"
         >
           Send Message
         </button>
