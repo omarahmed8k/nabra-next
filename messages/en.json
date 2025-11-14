@@ -117,5 +117,25 @@
 	"projects": {
 		"title": "Our Handpicked Featured Portfolio",
 		"see": "See All Projects"
+	},
+	"footer": {
+		"cta": {
+			"title": "We're not just marketers, we're your strategists, storytellers, and growth partners.",
+			"subtitle": "Got questions, project ideas, or just want to say hi? We're all ears!",
+			"button": "Let's Collaborate"
+		},
+		"contact": {
+			"email": "Email: Contact@bmp.agency",
+			"dubai": "DUBAI OFFICE: Dubai Silicon Oasis, IFZA Business Park, Building A6, Office 404",
+			"dubaiPhone": "Phone: +971 50 171 2832 / +971 50 171 6166",
+			"egypt": "OCTOBER OFFICE: Zayed, Entrance 5, District 9, Neighborhood 2, Giza, Egypt",
+			"egyptPhone": "Landline: +2023 78 79 77 2 / +2023 78 79 77 3"
+		},
+		"newsletter": {
+			"title": "Subscribe to our newsletter",
+			"placeholder": "name@email.com",
+			"button": "Subscribe"
+		},
+		"copyright": "All rights reserved."
 	}
 }
