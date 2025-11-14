@@ -45,7 +45,7 @@ export default function Services() {
                 src={service.image}
                 alt={t(`items.${service.key}.title`)}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="bg-white object-cover transition-transform duration-500 group-hover:scale-110"
               />
               
               {/* Gradient Overlay */}

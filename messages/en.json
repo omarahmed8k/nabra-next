@@ -113,5 +113,9 @@
 		"title": "Got questions, project ideas, or just want to say hi?",
 		"subtitle": "We're all ears!",
 		"cta": "Let's Collaborate"
+	},
+	"projects": {
+		"title": "Our Handpicked Featured Portfolio",
+		"see": "See All Projects"
 	}
 }
