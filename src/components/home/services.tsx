@@ -2,15 +2,15 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const services = [
-  { key: "digital", icon: "💻" },
-  { key: "documentaries", icon: "🎬" },
-  { key: "activations", icon: "🎯" },
-  { key: "commercials", icon: "📹" },
-  { key: "reels", icon: "📱" },
-  { key: "events", icon: "🎪" },
-  { key: "vfx", icon: "✨" },
+  { key: "digital", image: "/images/services/social-media.jpg" },
+  { key: "documentaries", image: "/images/services/branding.jpg" },
+  { key: "activations", image: "/images/services/media-production.jpg" },
+  { key: "commercials", image: "/images/services/photography.jpg" },
+  { key: "reels", image: "/images/services/web-development.jpg" },
+  { key: "events", image: "/images/services/app-development.jpg" },
 ];
 
 export default function Services() {
@@ -25,16 +25,12 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-[#8b2490] font-semibold mb-4 uppercase tracking-wider">
-            {t("subtitle")}
-          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {t("title")}
           </h2>
-          <p className="text-xl text-gray-600">{t("subtitle2")}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={service.key}
@@ -42,17 +38,25 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+              className="relative h-[400px] rounded-3xl overflow-hidden group cursor-pointer"
             >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
+              {/* Background Image */}
+              <Image
+                src={service.image}
+                alt={t(`items.${service.key}.title`)}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
+              
+              {/* Title Overlay */}
+              <div className="absolute inset-0 flex items-end p-8">
+                <h3 className="text-base font-bold text-white uppercase tracking-wide">
+                  {t(`items.${service.key}.title`)}
+                </h3>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">
-                {t(`items.${service.key}.title`)}
-              </h3>
-              <p className="text-gray-600">
-                {t(`items.${service.key}.description`)}
-              </p>
             </motion.div>
           ))}
         </div>

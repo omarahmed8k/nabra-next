@@ -82,7 +82,7 @@ export default function Partners() {
             onMouseLeave={() => (pausedRef.current = false)}
             onTouchStart={() => (pausedRef.current = true)}
             onTouchEnd={() => (pausedRef.current = false)}
-            className="overflow-x-auto overflow-y-hidden w-full border border-gray-700 rounded-full scrollbar-hide"
+            className="overflow-x-auto overflow-y-hidden w-full border border-gray-700 rounded-full scrollbar-hide outline-[1px] outline-gray-700/60"
             style={{
               WebkitOverflowScrolling: "touch",
               scrollbarWidth: "none",
