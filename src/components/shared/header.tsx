@@ -4,6 +4,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const locale = useLocale();
@@ -37,9 +38,15 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/" 
-              className="relative text-2xl font-bold text-white transition-all duration-300 hover:scale-105"
+              className="relative transition-all duration-300 hover:scale-105"
             >
-              Nabra
+              <Image
+                src="/svgs/logo.svg"
+                alt="Nabra Logo"
+                width={45}
+                height={45}
+                className="drop-shadow-lg"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -76,14 +83,14 @@ export default function Header() {
               </Link>
 
               {/* Language Switcher */}
-              <div className="relative ml-1 flex items-center rounded-full p-1 border border-gray-700">
+              <div className="relative ml-1 flex items-center rounded-full p-1 border border-black/20">
                 <button
                   onClick={() => {
                     window.location.href = `/en${pathname}`;
                   }}
                   className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 cursor-pointer ${
                     locale === "en"
-                      ? "bg-gray-800 text-white shadow-md hover:shadow-lg hover:scale-105"
+                      ? "bg-black/20 text-white shadow-md hover:shadow-lg hover:scale-105"
                       : "text-gray-300 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
@@ -95,7 +102,7 @@ export default function Header() {
                   }}
                   className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 cursor-pointer ${
                     locale === "ar"
-                      ? "bg-gray-800 text-white shadow-md hover:shadow-lg hover:scale-105"
+                      ? "bg-black/20 text-white shadow-md hover:shadow-lg hover:scale-105"
                       : "text-gray-300 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
