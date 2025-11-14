@@ -37,7 +37,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link
-              href="/" 
+              href="/"
               className="relative transition-all duration-300 hover:scale-105"
             >
               <Image
@@ -68,16 +68,20 @@ export default function Header() {
                 >
                   {item.label}
                   {/* Underline with scale animation */}
-                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#8b2490] transition-all duration-300 ${
-                    pathname === item.href ? "w-[calc(100%-1.5rem)] opacity-100" : "w-0 opacity-0 group-hover:w-[calc(100%-1.5rem)] group-hover:opacity-100"
-                  }`} />
+                  <span
+                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#8b2490] transition-all duration-300 ${
+                      pathname === item.href
+                        ? "w-[calc(100%-1.5rem)] opacity-100"
+                        : "w-0 opacity-0 group-hover:w-[calc(100%-1.5rem)] group-hover:opacity-100"
+                    }`}
+                  />
                 </Link>
               ))}
 
               {/* CTA Button */}
               <Link
                 href="/contact"
-                className="ml-2 px-5 py-2.5 text-sm font-semibold bg-white text-[#501454] rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="ml-2 px-8 py-2.5 text-sm font-semibold bg-white text-[#501454] rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Let&apos;s Talk
               </Link>
@@ -170,7 +174,7 @@ export default function Header() {
               >
                 Let&apos;s Talk
               </Link>
-              
+
               {/* Mobile Language Switcher */}
               <div className="flex items-center gap-2 mt-4 bg-black/30 rounded-full p-1 border border-gray-700">
                 <button
@@ -207,4 +211,3 @@ export default function Header() {
     </header>
   );
 }
-

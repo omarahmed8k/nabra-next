@@ -8,74 +8,73 @@ interface AnimatedCTAButtonProps {
   children: React.ReactNode;
 }
 
-export default function AnimatedCTAButton({ href, children }: AnimatedCTAButtonProps) {
+export default function AnimatedCTAButton({
+  href,
+  children,
+}: AnimatedCTAButtonProps) {
   return (
-    <Link href={href} className="inline-block group">
+    <Link 
+      href={href} 
+      className="relative inline-block group"
+    >
+      {/* Outer glass container with gradient border */}
       <motion.div
-        className="relative"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        className="relative px-10 py-4 rounded-[40px] overflow-hidden"
+        style={{
+          backdropFilter: "blur(15px)",
+          background: "linear-gradient(112deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.11) 38%)",
+          borderLeft: "2px solid rgba(255, 255, 255, 0.5)",
+          borderTop: "2px solid rgba(255, 255, 255, 0.5)",
+        }}
+        whileHover={{ scale: 1.02, paddingLeft: "50px", paddingRight: "50px"}}
+        transition={{ duration: 0.3 }}
       >
-        {/* Outer border with animated glow */}
-        <motion.div
-          className="relative rounded-full p-[2px]"
+        {/* Inner glass layer */}
+        <div
+          className="absolute inset-0 rounded-[30px]"
           style={{
-            background: "linear-gradient(90deg, rgba(80,20,84,0.8), rgba(139,36,144,0.8), rgba(80,20,84,0.8))",
+            backdropFilter: "blur(13px)",
+            borderLeft: "2px solid rgba(255, 255, 255, 0)",
+            borderTop: "2px solid rgba(255, 255, 255, 0)",
+            margin: "5px",
           }}
-          animate={{
-            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+        />
+
+        {/* Radial gradient background (default visible) */}
+        <motion.div
+          className="absolute inset-0 rounded-full"
+          style={{
+            background: "radial-gradient(127.9% 258% at -40.3% 0%, rgb(80, 20, 84) 2.84%, rgb(0, 0, 0) 90.14%, rgb(0, 0, 0) 100%)",
           }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "linear",
-          }}
+          initial={{ opacity: 1 }}
+          whileHover={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        />
+
+        {/* Purple dot that appears on hover */}
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          initial={{ opacity: 0, scale: 0 }}
+          whileHover={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
         >
-          {/* Inner black background with gradient overlay */}
-          <motion.div
-            className="relative px-12 py-4 bg-black rounded-full overflow-hidden"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            {/* Animated red gradient fill on hover */}
-            <motion.div
-              className="absolute inset-0 rounded-full"
-              style={{
-                background: "linear-gradient(90deg, #8b1a1a 0%, #c92a2a 50%, #8b1a1a 100%)",
-                backgroundSize: "200% 100%",
-              }}
-              initial={{ opacity: 0 }}
-              whileHover={{ 
-                opacity: 1,
-                backgroundPosition: ["0% 50%", "100% 50%"],
-                transition: {
-                  opacity: { duration: 0.3 },
-                  backgroundPosition: { duration: 2, repeat: Infinity, ease: "linear" }
-                }
-              }}
-            />
-            
-            {/* Red dot indicator */}
-            <motion.div
-              className="absolute left-6 top-1/2 -translate-y-1/2 w-3 h-3 bg-red-600 rounded-full z-10"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.8, 1, 0.8],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-            
-            {/* Text content */}
-            <span className="relative z-10 text-white font-semibold text-lg">
-              {children}
-            </span>
-          </motion.div>
+          <div 
+            className="w-6 h-6 rounded-full bg-[#501454]"
+            style={{ 
+              transform: "scale(0.57)",
+            }}
+          />
         </motion.div>
+
+        {/* Text */}
+        <motion.h2
+          className="relative z-10 text-white font-bold text-center pointer-events-none"
+          style={{ fontFamily: "Syne, sans-serif" }}
+          initial={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          {children}
+        </motion.h2>
       </motion.div>
     </Link>
   );
