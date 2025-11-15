@@ -7,7 +7,7 @@ export default function AboutStory() {
   const t = useTranslations("about");
 
   return (
-    <section className="py-20 bg-gray-950">
+    <section className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -15,7 +15,7 @@ export default function AboutStory() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="aspect-video bg-linear-to-br from-[#501454] to-[#8b2490] rounded-2xl flex items-center justify-center text-white text-6xl">
+            <div className="aspect-video bg-linear-to-br from-[#f900fe] to-black rounded-2xl flex items-center justify-center text-[#f0f0f0] text-6xl">
               🎯
             </div>
           </motion.div>

@@ -17,7 +17,7 @@ export default function ProjectsCTA() {
           </h2>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-linear-to-r from-[#501454] to-[#8b2490] text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-[#501454]/50 transition-all duration-300 transform hover:scale-105"
+            className="inline-block px-8 py-4 bg-linear-to-r from-[#f900fe] to-black text-[#f0f0f0] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#f900fe]/50 transition-all duration-300 transform hover:scale-105"
           >
             Start Your Project
           </Link>

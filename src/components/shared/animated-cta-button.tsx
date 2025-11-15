@@ -44,7 +44,7 @@ export default function AnimatedCTAButton({
         <motion.div
           className="absolute inset-0 rounded-full"
           style={{
-            background: "radial-gradient(127.9% 258% at -40.3% 0%, rgb(80, 20, 84) 2.84%, rgb(0, 0, 0) 90.14%, rgb(0, 0, 0) 100%)",
+            background: "radial-gradient(127.9% 258% at -40.3% 0%, #f900fe 2.84%, #000000 90.14%, #000000 100%)",
           }}
           initial={{ opacity: 1 }}
           whileHover={{ opacity: 0 }}
@@ -59,7 +59,7 @@ export default function AnimatedCTAButton({
           transition={{ duration: 0.3 }}
         >
           <div 
-            className="w-6 h-6 rounded-full bg-[#501454]"
+            className="w-6 h-6 rounded-full bg-[#f900fe]"
             style={{ 
               transform: "scale(0.57)",
             }}

@@ -28,18 +28,18 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
               className="group cursor-pointer"
             >
               <div className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="aspect-video bg-linear-to-br from-[#501454] to-[#8b2490] flex items-center justify-center text-8xl">
+                <div className="aspect-video bg-linear-to-br from-[#f900fe] to-black flex items-center justify-center text-8xl">
                   {project.image}
                 </div>
                 <div className="p-6">
-                  <div className="text-sm text-[#8b2490] font-semibold mb-2 uppercase tracking-wider">
+                  <div className="text-sm text-[#f900fe] font-semibold mb-2 uppercase tracking-wider">
                     {project.category}
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#8b2490] transition-colors duration-200">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#f900fe] transition-colors duration-200">
                     {project.title}
                   </h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
-                  <div className="flex items-center text-[#8b2490] font-semibold">
+                  <div className="flex items-center text-[#f900fe] font-semibold">
                     View Project
                     <span className="ml-2 group-hover:translate-x-2 transition-transform duration-200">
                       →

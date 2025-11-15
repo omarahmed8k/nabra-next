@@ -18,7 +18,7 @@ export default function ServicesGrid() {
   const t = useTranslations("services");
 
   return (
-    <section className="py-20 bg-gray-950">
+    <section className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
           {services.map((service, index) => (
@@ -44,7 +44,7 @@ export default function ServicesGrid() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center text-[#8b2490] font-semibold hover:text-[#501454] transition-colors duration-200"
+                  className="inline-flex items-center text-[#f900fe] font-semibold hover:text-[#d900e0] transition-colors duration-200"
                 >
                   Learn More
                   <span className="ml-2">→</span>

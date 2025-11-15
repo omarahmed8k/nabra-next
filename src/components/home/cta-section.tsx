@@ -8,7 +8,7 @@ export default function CTASection() {
   const t = useTranslations();
 
   return (
-    <section className="py-20 bg-linear-to-br from-[#501454] to-[#8b2490] text-white">
+    <section className="py-20 bg-linear-to-br from-[#f900fe] to-[#000000] text-[#f0f0f0]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export default function CTASection() {
           </h2>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-white text-[#501454] font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            className="inline-block px-8 py-4 bg-[#f0f0f0] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             {t("contact.cta")}
           </Link>

@@ -29,7 +29,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className="dark">
-      <body className="antialiased bg-[#0a0a0a] text-white">
+      <body className="antialiased bg-black text-[#f0f0f0]">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>

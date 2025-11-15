@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Video() {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center bg-gray-50">
+    <section className="w-full min-h-screen flex items-center justify-center bg-black">
       <div className="w-full h-screen relative">
         <div className="relative w-full h-full">
           <iframe

@@ -21,6 +21,15 @@ const partnerImages = [
   "12.png",
   "13.png",
   "14.png",
+  "15.png",
+  "16.png",
+  "17.png",
+  "18.png",
+  "19.png",
+  "20.png",
+  "21.png",
+  "22.png",
+  "23.png",
 ];
 
 export default function Partners() {
@@ -64,7 +73,7 @@ export default function Partners() {
   }, []);
 
   return (
-    <section className="py-12 bg-gray-950">
+    <section className="py-12 bg-black">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

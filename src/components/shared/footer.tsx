@@ -8,14 +8,14 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="bg-[#0d0d0d] text-white py-16 px-4 md:px-6">
+    <footer className="bg-black text-[#f0f0f0] py-16 px-4 md:px-6">
       <div className="container mx-auto">
         {/* Main Container with Radial Gradient */}
         <div
           className="rounded-[40px] p-8 md:p-12 mb-8"
           style={{
             background:
-              "radial-gradient(136.2% 150% at 46% -22.8%, rgb(80, 20, 84) 0%, rgba(255, 255, 255, 0.03) 37.6389%)",
+              "radial-gradient(136.2% 150% at 46% -22.8%, #f900fe 0%, rgba(255, 255, 255, 0.03) 37.6389%)",
           }}
         >
           {/* Logo */}
@@ -50,7 +50,7 @@ export default function Footer() {
                 className="group inline-flex items-center gap-4 px-8 py-4 rounded-[54px] border border-white transition-all duration-300 hover:scale-105"
                 style={{
                   background:
-                    "radial-gradient(75% 291.6% at 10.6% -38.1%, rgba(80, 20, 84, 0.99) 0%, rgba(0, 0, 0, 0) 13.4273%, rgb(139, 36, 144) 100%)",
+                    "radial-gradient(75% 291.6% at 10.6% -38.1%, #f900fe 0%, rgba(0, 0, 0, 0) 13.4273%, #f900fe 100%)",
                 }}
               >
                 <span className="text-2xl md:text-3xl font-light italic">
@@ -74,7 +74,7 @@ export default function Footer() {
             {/* Email */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 shrink-0 text-[#8b2490]">
+                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
                     <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z" />
                   </svg>
@@ -88,7 +88,7 @@ export default function Footer() {
             {/* Dubai Office */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 shrink-0 text-[#8b2490]">
+                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
                     <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" />
                   </svg>
@@ -102,7 +102,7 @@ export default function Footer() {
             {/* Dubai Phone */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 shrink-0 text-[#8b2490]">
+                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
                     <path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z" />
                   </svg>
@@ -116,7 +116,7 @@ export default function Footer() {
             {/* Egypt Office */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 shrink-0 text-[#8b2490]">
+                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
                     <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" />
                   </svg>
@@ -130,7 +130,7 @@ export default function Footer() {
             {/* Egypt Phone */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 shrink-0 text-[#8b2490]">
+                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
                     <path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z" />
                   </svg>
@@ -153,7 +153,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="px-8 py-4 rounded-[53px] bg-[#8b2490] text-white font-semibold hover:bg-[#6b1c70] transition-colors"
+                className="px-8 py-4 rounded-[53px] bg-[#f900fe] text-[#f0f0f0] font-semibold hover:bg-[#d900e0] transition-colors"
               >
                 {t("newsletter.button")}
               </button>

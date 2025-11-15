@@ -45,7 +45,7 @@ export default function FAQ() {
                 <motion.span
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-2xl text-[#8b2490]">
+                  className="text-2xl text-[#f900fe]">
                   ↓
                 </motion.span>
               </button>

@@ -58,7 +58,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="John Doe"
           />
         </div>
@@ -77,7 +77,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="john@example.com"
           />
         </div>
@@ -95,7 +95,7 @@ export default function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="+20 111 860 0015"
           />
         </div>
@@ -113,7 +113,7 @@ export default function ContactForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="Your Company"
           />
         </div>
@@ -132,14 +132,14 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#8b2490] focus:outline-none focus:ring-2 focus:ring-[#8b2490]/20 transition-all duration-200 resize-none"
+            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200 resize-none"
             placeholder="Tell us about your project..."
           />
         </div>
 
         <button
           type="submit"
-          className="w-full px-8 py-4 bg-linear-to-r from-[#501454] to-[#8b2490] text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-[#501454]/50 transition-all duration-300 transform hover:scale-105"
+          className="w-full px-8 py-4 bg-linear-to-r from-[#f900fe] to-black text-[#f0f0f0] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#f900fe]/50 transition-all duration-300 transform hover:scale-105"
         >
           Send Message
         </button>

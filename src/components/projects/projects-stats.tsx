@@ -11,7 +11,7 @@ const stats = [
 
 export default function ProjectsStats() {
   return (
-    <section className="py-20 bg-gray-950">
+    <section className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -23,7 +23,7 @@ export default function ProjectsStats() {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#501454] to-[#8b2490] mb-2">
+              <div className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#f900fe] to-[#f0f0f0] mb-2">
                 {stat.value}
               </div>
               <div className="text-sm md:text-base text-gray-400 font-semibold uppercase tracking-wider">

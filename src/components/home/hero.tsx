@@ -34,10 +34,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 drop-shadow-2xl">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#f0f0f0] mb-6 drop-shadow-2xl">
             {t("title")}
             <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#8b2490] to-white">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#f900fe] to-[#f0f0f0]">
               {t("titleHighlight")}
             </span>
           </h1>

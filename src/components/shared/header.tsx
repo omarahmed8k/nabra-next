@@ -62,14 +62,14 @@ export default function Header() {
                   href={item.href}
                   className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-full group ${
                     pathname === item.href
-                      ? "text-[#8b2490]"
-                      : "text-gray-200 hover:text-[#8b2490]"
+                      ? "text-[#f900fe]"
+                      : "text-[#f0f0f0] hover:text-[#f900fe]"
                   } hover:bg-white/5`}
                 >
                   {item.label}
                   {/* Underline with scale animation */}
                   <span
-                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#8b2490] transition-all duration-300 ${
+                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#f900fe] transition-all duration-300 ${
                       pathname === item.href
                         ? "w-[calc(100%-1.5rem)] opacity-100"
                         : "w-0 opacity-0 group-hover:w-[calc(100%-1.5rem)] group-hover:opacity-100"
@@ -81,7 +81,7 @@ export default function Header() {
               {/* CTA Button */}
               <Link
                 href="/contact"
-                className="ml-2 px-8 py-2.5 text-sm font-semibold bg-white text-[#501454] rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="ml-2 px-8 py-2.5 text-sm font-semibold bg-[#f0f0f0] text-black rounded-full hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Let&apos;s Talk
               </Link>
@@ -159,8 +159,8 @@ export default function Header() {
                   href={item.href}
                   className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
                     pathname === item.href
-                      ? "bg-[#501454]/10 text-[#8b2490]"
-                      : "text-gray-200 hover:bg-white/5 hover:text-[#501454]"
+                      ? "bg-[#f900fe]/10 text-[#f900fe]"
+                      : "text-[#f0f0f0] hover:bg-white/5 hover:text-[#f900fe]"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -169,7 +169,7 @@ export default function Header() {
               ))}
               <Link
                 href="/contact"
-                className="block px-4 py-3 mt-4 bg-white text-[#501454] text-center rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg text-sm font-semibold"
+                className="block px-4 py-3 mt-4 bg-[#f0f0f0] text-black text-center rounded-full hover:bg-white transition-all duration-300 shadow-lg text-sm font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Let&apos;s Talk

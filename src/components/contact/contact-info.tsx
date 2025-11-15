@@ -64,7 +64,7 @@ export default function ContactInfo() {
             <a
               key={social}
               href="#"
-              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-linear-to-r hover:from-[#501454] hover:to-[#8b2490] hover:text-white transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
+              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-linear-to-r hover:from-[#f900fe] hover:to-black hover:text-[#f0f0f0] transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
               aria-label={social}
             >
               {social[0]}

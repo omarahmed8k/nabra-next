@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        primary: 'var(--primary)',
+      },
+      fontFamily: {
+        sans: ['var(--font-unbounded)', 'sans-serif'],
+        unbounded: ['var(--font-unbounded)', 'sans-serif'],
       },
     },
   },

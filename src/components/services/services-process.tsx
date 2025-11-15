@@ -53,7 +53,7 @@ export default function ServicesProcess() {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#501454] to-[#8b2490] mb-4">
+              <div className="text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#f900fe] to-[#f0f0f0] mb-4">
                 {process.step}
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">
