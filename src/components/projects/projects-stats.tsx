@@ -26,7 +26,7 @@ export default function ProjectsStats() {
               <div className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#f900fe] to-[#f0f0f0] mb-2">
                 {stat.value}
               </div>
-              <div className="text-sm md:text-base text-gray-400 font-semibold uppercase tracking-wider">
+              <div className="text-sm md:text-base text-[#f0f0f0]/60 font-semibold uppercase tracking-wider">
                 {stat.label}
               </div>
             </motion.div>

@@ -7,14 +7,14 @@ import Projects from "@/components/home/projects";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <Video />
       <Partners />
       <Services />
       <Projects />
       <Testimonials />
-    </>
+    </div>
   );
 }
 

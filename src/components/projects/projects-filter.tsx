@@ -12,7 +12,7 @@ export default function ProjectsFilter({
   onCategoryChange,
 }: ProjectsFilterProps) {
   return (
-    <section className="py-12 bg-black border-b border-gray-800">
+    <section className="py-12 bg-black border-b border-[#f0f0f0]/10">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-center gap-4">
           {categories.map((category) => (
@@ -22,7 +22,7 @@ export default function ProjectsFilter({
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                 activeCategory === category
                   ? "bg-[#f900fe] text-[#f0f0f0] shadow-lg shadow-[#f900fe]/50"
-                  : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+                  : "bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0]/60 hover:bg-[#f0f0f0]/5 hover:text-[#f0f0f0]"
               }`}
             >
               {category}

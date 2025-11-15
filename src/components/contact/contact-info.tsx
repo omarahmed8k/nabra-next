@@ -38,7 +38,7 @@ export default function ContactInfo() {
 
       <div className="space-y-8">
         {contactInfo.map((info, index) => (
-          <div key={index} className="bg-gray-900 p-6 rounded-2xl">
+          <div key={index} className="bg-[#000000] border border-[#f0f0f0]/10 p-6 rounded-2xl">
             <div className="flex items-start gap-4">
               <div className="text-4xl">{info.icon}</div>
               <div>
@@ -46,7 +46,7 @@ export default function ContactInfo() {
                   {info.title}
                 </h3>
                 {info.details.map((detail, idx) => (
-                  <p key={idx} className="text-gray-300">
+                  <p key={idx} className="text-[#f0f0f0]/80">
                     {detail}
                   </p>
                 ))}
@@ -64,7 +64,7 @@ export default function ContactInfo() {
             <a
               key={social}
               href="#"
-              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-linear-to-r hover:from-[#f900fe] hover:to-black hover:text-[#f0f0f0] transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
+              className="w-12 h-12 rounded-full bg-[#000000] border border-[#f0f0f0]/20 hover:bg-[#f900fe] hover:border-[#f900fe] hover:text-[#f0f0f0] transition-all duration-300 flex items-center justify-center font-bold text-[#f0f0f0]"
               aria-label={social}
             >
               {social[0]}

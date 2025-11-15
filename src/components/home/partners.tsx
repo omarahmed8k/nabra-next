@@ -91,7 +91,7 @@ export default function Partners() {
             onMouseLeave={() => (pausedRef.current = false)}
             onTouchStart={() => (pausedRef.current = true)}
             onTouchEnd={() => (pausedRef.current = false)}
-            className="overflow-x-auto overflow-y-hidden w-full border border-gray-700 rounded-full scrollbar-hide outline-[1px] outline-gray-700/60"
+            className="overflow-x-auto overflow-y-hidden w-full border border-[#f0f0f0]/20 rounded-full scrollbar-hide outline-[1px] outline-[#f0f0f0]/10"
             style={{
               WebkitOverflowScrolling: "touch",
               scrollbarWidth: "none",
@@ -111,12 +111,12 @@ export default function Partners() {
                         alt={src.replace(/[-.]/g, " ")}
                         width={176}
                         height={80}
-                        className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                        className="object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
                   {/* Vertical divider */}
-                  <div className="mx-6 h-[100px] w-px bg-gray-700/60" />
+                  <div className="mx-6 h-[100px] w-px bg-[#f0f0f0]/10" />
                 </div>
               ))}
             </div>

@@ -13,77 +13,59 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Brand Campaign 2024",
-    category: "Digital",
-    image: "🎨",
-    description: "Comprehensive digital marketing campaign",
+    size: "large-h",
+    image: "/images/projects/1.jpg",
+    description: "Comprehensive digital marketing campaign that drives engagement and builds brand awareness across multiple platforms.",
   },
   {
     id: 2,
     title: "Product Launch Video",
-    category: "Video",
-    image: "🎬",
-    description: "High-impact product launch commercial",
+    size: "large-h",
+    image: "/images/projects/2.jpg",
+    description: "High-impact product launch commercial that captures attention and drives conversions through compelling storytelling.",
   },
   {
     id: 3,
     title: "Corporate Event",
-    category: "Events",
-    image: "🎪",
-    description: "Large-scale corporate event management",
+    size: "small",
+    image: "/images/projects/3.jpg",
+    description: "Large-scale corporate event management with seamless execution and memorable experiences.",
   },
   {
     id: 4,
     title: "Brand Identity Design",
-    category: "Branding",
-    image: "✨",
-    description: "Complete brand identity redesign",
+    size: "large-w",
+    image: "/images/projects/4.jpg",
+    description: "Complete brand identity redesign that reflects modern values and connects with target audiences.",
   },
   {
     id: 5,
     title: "Social Media Campaign",
-    category: "Digital",
-    image: "📱",
-    description: "Viral social media marketing campaign",
+    size: "large-v",
+    image: "/images/projects/5.jpg",
+    description: "Viral social media marketing campaign that creates buzz and drives organic reach across platforms.",
   },
   {
     id: 6,
     title: "Documentary Series",
-    category: "Video",
-    image: "📹",
-    description: "Multi-episode documentary production",
+    size: "large-h",
+    image: "/images/projects/6.jpg",
+    description: "Multi-episode documentary production that tells compelling stories and engages audiences.",
   },
   {
     id: 7,
     title: "Product Activation",
-    category: "Events",
-    image: "🎯",
-    description: "Interactive product activation experience",
-  },
-  {
-    id: 8,
-    title: "Rebranding Project",
-    category: "Branding",
-    image: "🚀",
-    description: "Complete brand transformation",
+    size: "small",
+    image: "/images/projects/7.jpg",
+    description: "Interactive product activation experience that creates memorable brand touchpoints.",
   },
 ];
 
 export default function ProjectsPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredProjects =
-    activeCategory === "All"
-      ? projects
-      : projects.filter((project) => project.category === activeCategory);
-
   return (
-    <div className="pt-20">
+    <div>
       <ProjectsHero />
-      <ProjectsFilter
-        activeCategory={activeCategory}
-        onCategoryChange={setActiveCategory}
-      />
-      <ProjectsGrid projects={filteredProjects} />
+      <ProjectsGrid projects={projects} />
       <ProjectsStats />
       <ProjectsCTA />
     </div>

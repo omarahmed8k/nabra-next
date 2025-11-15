@@ -3,6 +3,7 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import AnimatedCTAButton from "@/components/shared/animated-cta-button";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -22,7 +23,7 @@ export default function Footer() {
           <div className="mb-12">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo.png"
+                src="/svgs/logo.svg"
                 alt="Nabra"
                 width={150}
                 height={60}
@@ -45,27 +46,9 @@ export default function Footer() {
             </div>
 
             <div className="flex justify-center">
-              <Link
-                href="/contact"
-                className="group inline-flex items-center gap-4 px-8 py-4 rounded-[54px] border border-white transition-all duration-300 hover:scale-105"
-                style={{
-                  background:
-                    "radial-gradient(75% 291.6% at 10.6% -38.1%, #f900fe 0%, rgba(0, 0, 0, 0) 13.4273%, #f900fe 100%)",
-                }}
-              >
-                <span className="text-2xl md:text-3xl font-light italic">
-                  {t("cta.button")}
-                </span>
-                <div className="w-10 h-10 flex items-center justify-center rounded-full transform rotate-90">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 256 256"
-                    className="w-6 h-6 fill-current"
-                  >
-                    <path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z" />
-                  </svg>
-                </div>
-              </Link>
+              <AnimatedCTAButton href="/contact">
+                {t("cta.button")}
+              </AnimatedCTAButton>
             </div>
           </div>
 
@@ -140,24 +123,6 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Newsletter */}
-          <div className="mb-12">
-            <h4 className="text-white/80 text-xl mb-4">{t("newsletter.title")}</h4>
-            <form className="flex gap-2 max-w-2xl">
-              <input
-                type="email"
-                placeholder={t("newsletter.placeholder")}
-                className="flex-1 px-6 py-4 rounded-[53px] bg-white/10 border-none outline-none text-white placeholder:text-white/30"
-              />
-              <button
-                type="submit"
-                className="px-8 py-4 rounded-[53px] bg-[#f900fe] text-[#f0f0f0] font-semibold hover:bg-[#d900e0] transition-colors"
-              >
-                {t("newsletter.button")}
-              </button>
-            </form>
           </div>
 
           {/* Social Media Links */}

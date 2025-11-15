@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/routing";
+import AnimatedCTAButton from "@/components/shared/animated-cta-button";
 
 export default function ProjectsCTA() {
   return (
-    <section className="py-20 bg-linear-to-br from-gray-900 via-black to-gray-900 text-white">
+    <section className="py-20 bg-[#000000] text-[#f0f0f0]">
       <div className="container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,12 +15,9 @@ export default function ProjectsCTA() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Let&apos;s create something amazing together
           </h2>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-4 bg-linear-to-r from-[#f900fe] to-black text-[#f0f0f0] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#f900fe]/50 transition-all duration-300 transform hover:scale-105"
-          >
+          <AnimatedCTAButton href="/contact">
             Start Your Project
-          </Link>
+          </AnimatedCTAButton>
         </motion.div>
       </div>
     </section>

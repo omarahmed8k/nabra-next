@@ -33,11 +33,11 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-gray-900 rounded-2xl shadow-md overflow-hidden"
+              className="bg-[#000000] border border-[#f0f0f0]/10 rounded-2xl shadow-md overflow-hidden"
             >
               <button
                 onClick={() => toggle(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-800 transition-colors duration-200"
+                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-[#f0f0f0]/5 transition-colors duration-200"
               >
                 <span className="text-lg font-semibold text-white">
                   {t(`items.${faq}.question`)}
@@ -58,7 +58,7 @@ export default function FAQ() {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <div className="px-8 pb-6 text-gray-400">
+                <div className="px-8 pb-6 text-[#f0f0f0]/60">
                   {t(`items.${faq}.answer`)}
                 </div>
               </motion.div>

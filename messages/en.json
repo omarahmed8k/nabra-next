@@ -9,6 +9,8 @@
 	},
 	"services": {
 		"title": "Discover our Network",
+		"subtitle": "Our Services",
+		"subtitle2": "Comprehensive solutions for your brand",
 		"items": {
 			"digital": {
 				"title": "Digital Solutions",

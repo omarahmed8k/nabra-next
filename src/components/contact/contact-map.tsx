@@ -10,7 +10,7 @@ export default function ContactMap() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="aspect-video bg-gray-900 rounded-2xl overflow-hidden flex items-center justify-center text-gray-500 text-2xl font-semibold"
+          className="aspect-video bg-[#000000] border border-[#f0f0f0]/10 rounded-2xl overflow-hidden flex items-center justify-center text-[#f0f0f0]/40 text-2xl font-semibold"
         >
           🗺️ Map Location
         </motion.div>

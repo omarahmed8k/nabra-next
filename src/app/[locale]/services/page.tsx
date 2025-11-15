@@ -5,7 +5,7 @@ import ServicesCTA from "@/components/services/services-cta";
 
 export default function ServicesPage() {
   return (
-    <div className="pt-20">
+    <div>
       <ServicesHero />
       <ServicesGrid />
       <ServicesProcess />

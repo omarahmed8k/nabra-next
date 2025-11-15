@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import AnimatedCTAButton from "@/components/shared/animated-cta-button";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-gray-300 font-semibold mb-2"
+            className="block text-[#f0f0f0] font-semibold mb-2"
           >
             Full Name *
           </label>
@@ -58,7 +59,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="John Doe"
           />
         </div>
@@ -66,7 +67,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-gray-300 font-semibold mb-2"
+            className="block text-[#f0f0f0] font-semibold mb-2"
           >
             Email Address *
           </label>
@@ -77,7 +78,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="john@example.com"
           />
         </div>
@@ -85,7 +86,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="phone"
-            className="block text-gray-300 font-semibold mb-2"
+            className="block text-[#f0f0f0] font-semibold mb-2"
           >
             Phone Number
           </label>
@@ -95,7 +96,7 @@ export default function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="+20 111 860 0015"
           />
         </div>
@@ -103,7 +104,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="company"
-            className="block text-gray-300 font-semibold mb-2"
+            className="block text-[#f0f0f0] font-semibold mb-2"
           >
             Company Name
           </label>
@@ -113,7 +114,7 @@ export default function ContactForm() {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
+            className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
             placeholder="Your Company"
           />
         </div>
@@ -121,7 +122,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="message"
-            className="block text-gray-300 font-semibold mb-2"
+            className="block text-[#f0f0f0] font-semibold mb-2"
           >
             Message *
           </label>
@@ -132,17 +133,14 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 text-white focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200 resize-none"
+            className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200 resize-none"
             placeholder="Tell us about your project..."
           />
         </div>
 
-        <button
-          type="submit"
-          className="w-full px-8 py-4 bg-linear-to-r from-[#f900fe] to-black text-[#f0f0f0] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#f900fe]/50 transition-all duration-300 transform hover:scale-105"
-        >
+        <AnimatedCTAButton type="submit" className="w-full">
           Send Message
-        </button>
+        </AnimatedCTAButton>
       </form>
     </motion.div>
   );

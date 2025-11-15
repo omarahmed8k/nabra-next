@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/routing";
+import AnimatedCTAButton from "@/components/shared/animated-cta-button";
 
 export default function ServicesCTA() {
   return (
@@ -15,12 +15,9 @@ export default function ServicesCTA() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Ready to start your project?
           </h2>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-4 bg-[#f0f0f0] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-2xl"
-          >
+          <AnimatedCTAButton href="/contact">
             Get in Touch
-          </Link>
+          </AnimatedCTAButton>
         </motion.div>
       </div>
     </section>

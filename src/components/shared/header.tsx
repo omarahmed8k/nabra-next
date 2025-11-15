@@ -95,7 +95,7 @@ export default function Header() {
                   className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 cursor-pointer ${
                     locale === "en"
                       ? "bg-black/20 text-white shadow-md hover:shadow-lg hover:scale-105"
-                      : "text-gray-300 hover:text-white hover:bg-white/5 hover:scale-105"
+                      : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
                   EN
@@ -107,7 +107,7 @@ export default function Header() {
                   className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-300 cursor-pointer ${
                     locale === "ar"
                       ? "bg-black/20 text-white shadow-md hover:shadow-lg hover:scale-105"
-                      : "text-gray-300 hover:text-white hover:bg-white/5 hover:scale-105"
+                      : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
                   AR
@@ -118,7 +118,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-gray-200 hover:bg-white/5 rounded-lg transition-all duration-300"
+              className="md:hidden p-2 text-[#f0f0f0] hover:bg-white/5 rounded-lg transition-all duration-300"
               aria-label="Toggle menu"
             >
               <svg
@@ -176,7 +176,7 @@ export default function Header() {
               </Link>
 
               {/* Mobile Language Switcher */}
-              <div className="flex items-center gap-2 mt-4 bg-black/30 rounded-full p-1 border border-gray-700">
+              <div className="flex items-center gap-2 mt-4 bg-black/30 rounded-full p-1 border border-[#f0f0f0]/20">
                 <button
                   onClick={() => {
                     window.location.href = `/en${pathname}`;
@@ -184,8 +184,8 @@ export default function Header() {
                   }}
                   className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-full transition-all duration-300 cursor-pointer ${
                     locale === "en"
-                      ? "bg-gray-800 text-white shadow-md hover:shadow-lg hover:scale-105"
-                      : "text-gray-300 hover:text-white hover:bg-white/5 hover:scale-105"
+                      ? "bg-[#000000] text-white shadow-md hover:shadow-lg hover:scale-105 border border-[#f0f0f0]/20"
+                      : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
                   EN
@@ -197,8 +197,8 @@ export default function Header() {
                   }}
                   className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-full transition-all duration-300 cursor-pointer ${
                     locale === "ar"
-                      ? "bg-gray-800 text-white shadow-md hover:shadow-lg hover:scale-105"
-                      : "text-gray-300 hover:text-white hover:bg-white/5 hover:scale-105"
+                      ? "bg-[#000000] text-white shadow-md hover:shadow-lg hover:scale-105 border border-[#f0f0f0]/20"
+                      : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
                   AR

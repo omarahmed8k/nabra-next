@@ -6,11 +6,11 @@ import ContactCTA from "@/components/contact/contact-cta";
 
 export default function ContactPage() {
   return (
-    <div className="pt-20">
+    <div>
       <ContactHero />
       
       {/* Contact Form & Info */}
-      <section className="py-20 bg-gray-950">
+      <section className="py-20 bg-[#000000]">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             <ContactForm />

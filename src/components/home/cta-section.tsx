@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/routing";
+import AnimatedCTAButton from "@/components/shared/animated-cta-button";
 
 export default function CTASection() {
   const t = useTranslations();
@@ -19,12 +19,9 @@ export default function CTASection() {
           <h2 className="text-3xl md:text-5xl font-bold mb-8 max-w-4xl mx-auto">
             {t("cta.title")}
           </h2>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-4 bg-[#f0f0f0] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-2xl"
-          >
+          <AnimatedCTAButton href="/contact">
             {t("contact.cta")}
-          </Link>
+          </AnimatedCTAButton>
         </motion.div>
       </div>
     </section>

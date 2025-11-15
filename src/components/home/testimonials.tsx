@@ -45,9 +45,9 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="bg-gray-900 p-12 rounded-2xl"
+              className="bg-[#000000] border border-[#f0f0f0]/10 p-12 rounded-2xl"
             >
-              <p className="text-xl md:text-2xl text-gray-300 mb-8 italic">
+              <p className="text-xl md:text-2xl text-[#f0f0f0]/80 mb-8 italic">
                 "{t(`items.${testimonials[activeIndex]}.text`)}"
               </p>
               <div className="flex items-center gap-4">
@@ -60,7 +60,7 @@ export default function Testimonials() {
                   <p className="font-bold text-white">
                     {t(`items.${testimonials[activeIndex]}.author`)}
                   </p>
-                  <p className="text-gray-400">
+                  <p className="text-[#f0f0f0]/60">
                     {t(`items.${testimonials[activeIndex]}.position`)}
                   </p>
                 </div>
@@ -72,14 +72,14 @@ export default function Testimonials() {
           <div className="flex justify-center gap-4 mt-8">
             <button
               onClick={prev}
-              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#f900fe] hover:text-[#f0f0f0] transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
+              className="w-12 h-12 rounded-full bg-[#000000] border border-[#f0f0f0]/20 hover:bg-[#f900fe] hover:text-[#f0f0f0] hover:border-[#f900fe] transition-all duration-300 flex items-center justify-center font-bold text-[#f0f0f0]"
               aria-label="Previous testimonial"
             >
               ←
             </button>
             <button
               onClick={next}
-              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-[#f900fe] hover:text-[#f0f0f0] transition-all duration-300 flex items-center justify-center font-bold text-gray-400"
+              className="w-12 h-12 rounded-full bg-[#000000] border border-[#f0f0f0]/20 hover:bg-[#f900fe] hover:text-[#f0f0f0] hover:border-[#f900fe] transition-all duration-300 flex items-center justify-center font-bold text-[#f0f0f0]"
               aria-label="Next testimonial"
             >
               →
@@ -95,7 +95,7 @@ export default function Testimonials() {
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === activeIndex
                     ? "bg-[#f900fe] w-8"
-                    : "bg-gray-700 hover:bg-gray-600"
+                    : "bg-[#f0f0f0]/20 hover:bg-[#f0f0f0]/40"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

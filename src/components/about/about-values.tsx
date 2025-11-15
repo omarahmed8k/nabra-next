@@ -56,13 +56,13 @@ export default function AboutValues() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="text-center p-8 bg-gray-900 rounded-2xl hover:shadow-xl transition-all duration-300"
+              className="text-center p-8 bg-[#000000] border border-[#f0f0f0]/10 rounded-2xl hover:shadow-xl hover:border-[#f900fe]/30 transition-all duration-300"
             >
               <div className="text-5xl mb-4">{value.icon}</div>
               <h3 className="text-2xl font-bold text-white mb-3">
                 {value.title}
               </h3>
-              <p className="text-gray-300">{value.description}</p>
+              <p className="text-[#f0f0f0]/80">{value.description}</p>
             </motion.div>
           ))}
         </div>

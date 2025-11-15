@@ -11,13 +11,13 @@ export default function AboutMissionVision() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-gray-900 p-10 rounded-2xl shadow-lg"
+            className="bg-[#000000] border border-[#f0f0f0]/10 p-10 rounded-2xl shadow-lg"
           >
             <div className="text-5xl mb-6">🎯</div>
             <h3 className="text-3xl font-bold text-white mb-4">
               Our Mission
             </h3>
-            <p className="text-gray-300 text-lg">
+            <p className="text-[#f0f0f0]/80 text-lg">
               To ignite brands through transformative storytelling and
               immersive experiences that inspire, engage, and convert across
               all touchpoints.
@@ -29,13 +29,13 @@ export default function AboutMissionVision() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-gray-900 p-10 rounded-2xl shadow-lg"
+            className="bg-[#000000] border border-[#f0f0f0]/10 p-10 rounded-2xl shadow-lg"
           >
             <div className="text-5xl mb-6">👁️</div>
             <h3 className="text-3xl font-bold text-white mb-4">
               Our Vision
             </h3>
-            <p className="text-gray-300 text-lg">
+            <p className="text-[#f0f0f0]/80 text-lg">
               To be the leading creative agency that sets the standard for
               excellence in visual storytelling and brand transformation
               across the region.

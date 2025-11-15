@@ -9,7 +9,7 @@ export default function AboutStats() {
   const t = useTranslations("about");
 
   return (
-    <section className="py-20 bg-linear-to-br from-gray-900 via-black to-gray-900 text-white">
+    <section className="py-20 bg-[#000000] text-[#f0f0f0]">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -24,7 +24,7 @@ export default function AboutStats() {
               <div className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#f900fe] to-[#f0f0f0] mb-2">
                 {t(`stats.${stat}.value`)}
               </div>
-              <div className="text-sm md:text-base text-gray-400 font-semibold uppercase tracking-wider">
+              <div className="text-sm md:text-base text-[#f0f0f0]/60 font-semibold uppercase tracking-wider">
                 {t(`stats.${stat}.label`)}
               </div>
             </motion.div>

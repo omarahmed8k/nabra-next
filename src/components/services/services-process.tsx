@@ -38,7 +38,7 @@ export default function ServicesProcess() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Process
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-[#f0f0f0]/60 max-w-3xl mx-auto">
             We follow a proven methodology to deliver exceptional results
           </p>
         </motion.div>
@@ -59,7 +59,7 @@ export default function ServicesProcess() {
               <h3 className="text-2xl font-bold text-white mb-3">
                 {process.title}
               </h3>
-              <p className="text-gray-400">{process.description}</p>
+              <p className="text-[#f0f0f0]/60">{process.description}</p>
             </motion.div>
           ))}
         </div>
