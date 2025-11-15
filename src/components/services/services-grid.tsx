@@ -6,12 +6,18 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 
 const services = [
-  { key: "digital", image: "/images/services/social-media.jpg", slug: "digital-marketing" },
-  { key: "documentaries", image: "/images/services/branding.jpg", slug: "video-production" },
-  { key: "activations", image: "/images/services/media-production.jpg", slug: "event-production" },
-  { key: "commercials", image: "/images/services/photography.jpg", slug: "commercial-production" },
-  { key: "reels", image: "/images/services/web-development.jpg", slug: "software-development" },
-  { key: "events", image: "/images/services/app-development.jpg", slug: "event-management" },
+  { key: "branding", image: "/images/services/social-media.jpg", slug: "branding" },
+  { key: "digitalCommerce", image: "/images/services/branding.jpg", slug: "digital-commerce" },
+  { key: "visualIdentity", image: "/images/services/media-production.jpg", slug: "visual-identity" },
+  { key: "socialMedia", image: "/images/services/photography.jpg", slug: "social-media" },
+  { key: "uiUx", image: "/images/services/web-development.jpg", slug: "ui-ux-design" },
+  { key: "marketing", image: "/images/services/app-development.jpg", slug: "behavioural-marketing" },
+  { key: "strategicSupport", image: "/images/services/social-media.jpg", slug: "strategic-support" },
+  { key: "software", image: "/images/services/branding.jpg", slug: "software-solutions" },
+  { key: "videoProduction", image: "/images/services/media-production.jpg", slug: "video-production" },
+  { key: "motionGraphic", image: "/images/services/photography.jpg", slug: "motion-graphic" },
+  { key: "production", image: "/images/services/web-development.jpg", slug: "production" },
+  { key: "printing", image: "/images/services/app-development.jpg", slug: "printing" },
 ];
 
 export default function ServicesGrid() {

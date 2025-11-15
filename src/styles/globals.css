@@ -56,11 +56,44 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Alexandria';
+  src: url('/fonts/Alexandria-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('/fonts/Alexandria-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('/fonts/Alexandria-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alexandria';
+  src: url('/fonts/Alexandria-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #000000;
   --foreground: #f0f0f0;
   --primary: #f900fe;
   --font-unbounded: 'Unbounded', sans-serif;
+  --font-alexandria: 'Alexandria', sans-serif;
 }
 
 @theme inline {
@@ -73,6 +106,15 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-unbounded);
   min-height: 100vh;
+}
+
+html[lang="ar"],
+html[lang="ar"] body {
+  font-family: 'Alexandria', sans-serif !important;
+}
+
+html[lang="en"],
+html[lang="en"] body {
+  font-family: 'Unbounded', sans-serif !important;
 }

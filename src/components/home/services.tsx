@@ -6,12 +6,12 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 
 const services = [
-  { key: "digital", image: "/images/services/social-media.jpg", slug: "digital-marketing" },
-  { key: "documentaries", image: "/images/services/branding.jpg", slug: "video-production" },
-  { key: "activations", image: "/images/services/media-production.jpg", slug: "event-production" },
-  { key: "commercials", image: "/images/services/photography.jpg", slug: "commercial-production" },
-  { key: "reels", image: "/images/services/web-development.jpg", slug: "software-development" },
-  { key: "events", image: "/images/services/app-development.jpg", slug: "event-management" },
+  { key: "branding", image: "/images/services/social-media.jpg", slug: "branding" },
+  { key: "digitalCommerce", image: "/images/services/branding.jpg", slug: "digital-commerce" },
+  { key: "visualIdentity", image: "/images/services/media-production.jpg", slug: "visual-identity" },
+  { key: "socialMedia", image: "/images/services/photography.jpg", slug: "social-media" },
+  { key: "uiUx", image: "/images/services/web-development.jpg", slug: "ui-ux-design" },
+  { key: "software", image: "/images/services/app-development.jpg", slug: "software-development" },
 ];
 
 export default function Services() {

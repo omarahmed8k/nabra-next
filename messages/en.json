@@ -2,6 +2,7 @@
 	"hero": {
 		"title": "Hear the sound of",
 		"titleHighlight": "Success",
+		"tagline": "Ideas Worth Money",
 		"cta": "See Projects"
 	},
 	"partners": {
@@ -10,35 +11,55 @@
 	"services": {
 		"title": "Discover our Network",
 		"subtitle": "Our Services",
-		"subtitle2": "Comprehensive solutions for your brand",
+		"subtitle2": "Next level awaits",
 		"items": {
-			"digital": {
-				"title": "Digital Solutions",
-				"description": "Comprehensive digital marketing and web solutions"
+			"branding": {
+				"title": "Branding",
+				"description": "Building distinctive brand identities"
 			},
-			"documentaries": {
-				"title": "Documentaries",
-				"description": "Compelling visual storytelling"
+			"digitalCommerce": {
+				"title": "Digital Commerce",
+				"description": "E-commerce solutions and platforms"
 			},
-			"activations": {
-				"title": "Activations",
-				"description": "Engaging brand experiences"
+			"visualIdentity": {
+				"title": "Visual Identity",
+				"description": "Creating memorable visual systems"
 			},
-			"commercials": {
-				"title": "Commercials and Advertisements",
-				"description": "Professional video production"
+			"socialMedia": {
+				"title": "Social Media",
+				"description": "Social media strategy and management"
 			},
-			"reels": {
-				"title": "Shorts & Reels",
-				"description": "Social media content creation"
+			"uiUx": {
+				"title": "UI-UX Design",
+				"description": "User experience and interface design"
 			},
-			"events": {
-				"title": "Event Management",
-				"description": "End-to-end event solutions"
+			"marketing": {
+				"title": "Behavioural Marketing",
+				"description": "Data-driven marketing strategies"
 			},
-			"vfx": {
-				"title": "Visual Effects",
-				"description": "Cutting-edge visual effects"
+			"strategicSupport": {
+				"title": "Strategic Support",
+				"description": "Comprehensive business consulting"
+			},
+			"software": {
+				"title": "Software Solutions",
+				"description": "Custom software development"
+			},
+			"videoProduction": {
+				"title": "Video Production",
+				"description": "Professional video content creation"
+			},
+			"motionGraphic": {
+				"title": "Motion Graphic",
+				"description": "Animated graphics and motion design"
+			},
+			"production": {
+				"title": "Production",
+				"description": "Full-scale production services"
+			},
+			"printing": {
+				"title": "Printing",
+				"description": "Print design and production"
 			}
 		}
 	},
@@ -127,11 +148,10 @@
 			"button": "Let's Collaborate"
 		},
 		"contact": {
-			"email": "Email: Contact@bmp.agency",
-			"dubai": "DUBAI OFFICE: Dubai Silicon Oasis, IFZA Business Park, Building A6, Office 404",
-			"dubaiPhone": "Phone: +971 50 171 2832 / +971 50 171 6166",
-			"egypt": "OCTOBER OFFICE: Zayed, Entrance 5, District 9, Neighborhood 2, Giza, Egypt",
-			"egyptPhone": "Landline: +2023 78 79 77 2 / +2023 78 79 77 3"
+			"email": "Email: info@nabra-adv.com",
+			"phone1": "Phone: +965 5029 1498",
+			"phone2": "Phone: +20 120 083 3076",
+			"salesEmail": "Sales: basilalnuman@nabra-adv.com"
 		},
 		"newsletter": {
 			"title": "Subscribe to our newsletter",
