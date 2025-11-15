@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import AnimatedCTAButton from "@/components/shared/animated-cta-button";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
+  const t = useTranslations("contactPage");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,7 +18,7 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    alert("Thank you for your message! We'll get back to you soon.");
+    alert(t("form.success"));
     setFormData({
       name: "",
       email: "",
@@ -42,7 +44,7 @@ export default function ContactForm() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl font-bold text-white mb-8">
-        Send us a message
+        {t("form.title")}
       </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -50,7 +52,7 @@ export default function ContactForm() {
             htmlFor="name"
             className="block text-[#f0f0f0] font-semibold mb-2"
           >
-            Full Name *
+            {t("form.fields.name.label")}
           </label>
           <input
             type="text"
@@ -60,7 +62,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-            placeholder="John Doe"
+            placeholder={t("form.fields.name.placeholder")}
           />
         </div>
 
@@ -69,7 +71,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-[#f0f0f0] font-semibold mb-2"
           >
-            Email Address *
+            {t("form.fields.email.label")}
           </label>
           <input
             type="email"
@@ -79,7 +81,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-            placeholder="john@example.com"
+            placeholder={t("form.fields.email.placeholder")}
           />
         </div>
 
@@ -88,7 +90,7 @@ export default function ContactForm() {
             htmlFor="phone"
             className="block text-[#f0f0f0] font-semibold mb-2"
           >
-            Phone Number
+            {t("form.fields.phone.label")}
           </label>
           <input
             type="tel"
@@ -97,7 +99,7 @@ export default function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-            placeholder="+20 111 860 0015"
+            placeholder={t("form.fields.phone.placeholder")}
           />
         </div>
 
@@ -106,7 +108,7 @@ export default function ContactForm() {
             htmlFor="company"
             className="block text-[#f0f0f0] font-semibold mb-2"
           >
-            Company Name
+            {t("form.fields.company.label")}
           </label>
           <input
             type="text"
@@ -115,7 +117,7 @@ export default function ContactForm() {
             value={formData.company}
             onChange={handleChange}
             className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-            placeholder="Your Company"
+            placeholder={t("form.fields.company.placeholder")}
           />
         </div>
 
@@ -124,7 +126,7 @@ export default function ContactForm() {
             htmlFor="message"
             className="block text-[#f0f0f0] font-semibold mb-2"
           >
-            Message *
+            {t("form.fields.message.label")}
           </label>
           <textarea
             id="message"
@@ -134,12 +136,12 @@ export default function ContactForm() {
             required
             rows={6}
             className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200 resize-none"
-            placeholder="Tell us about your project..."
+            placeholder={t("form.fields.message.placeholder")}
           />
         </div>
 
         <AnimatedCTAButton type="submit" className="w-full">
-          Send Message
+          {t("form.submit")}
         </AnimatedCTAButton>
       </form>
     </motion.div>

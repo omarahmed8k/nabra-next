@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function ContactHero() {
+  const t = useTranslations("contactPage");
+
   return (
     <section className="relative min-h-[50vh] flex items-end justify-center overflow-hidden">
       {/* Background Image */}
@@ -31,10 +34,10 @@ export default function ContactHero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#f0f0f0] mb-4 drop-shadow-2xl">
-            Get in Touch
+            {t("hero.title")}
           </h1>
           <p className="text-lg md:text-xl text-[#f0f0f0]/80 max-w-3xl mx-auto">
-            Got questions, project ideas, or just want to say hi? We&apos;re all ears!
+            {t("hero.subtitle")}
           </p>
         </motion.div>
       </div>

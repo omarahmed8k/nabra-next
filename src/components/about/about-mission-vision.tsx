@@ -25,7 +25,7 @@ export default function AboutMissionVision() {
     <section className="py-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
-          {cards.map((card, index) => (
+          {cards.map((card) => (
             <motion.div
               key={card.title}
               initial={{ opacity: 0, y: 30 }}

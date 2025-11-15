@@ -25,14 +25,13 @@ export default function AboutStory() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold text-white mb-6">
-              Our Story
+              {t("story.title")}
             </h2>
             <p className="text-lg text-[#f0f0f0]/80 mb-6">
-              {t("description")}
+              {t("story.paragraph1")}
             </p>
             <p className="text-lg text-[#f0f0f0]/80">
-              We believe in the power of creativity and innovation to
-              transform brands and create lasting impressions.
+              {t("story.paragraph2")}
             </p>
           </motion.div>
         </div>
