@@ -68,21 +68,21 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Dubai Office */}
+            {/* Email */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 shrink-0 text-[#f900fe]">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
-                    <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" />
+                    <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-lg md:text-xl">{t("contact.dubai")}</p>
+                  <p className="text-lg md:text-xl">{t("contact.email")}</p>
                 </div>
               </div>
             </div>
 
-            {/* Dubai Phone */}
+            {/* Phone 1 */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 shrink-0 text-[#f900fe]">
@@ -91,26 +91,12 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-lg md:text-xl">{t("contact.dubaiPhone")}</p>
+                  <p className="text-lg md:text-xl">{t("contact.phone1")}</p>
                 </div>
               </div>
             </div>
 
-            {/* Egypt Office */}
-            <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
-                    <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-lg md:text-xl">{t("contact.egypt")}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Egypt Phone */}
+            {/* Phone 2 */}
             <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 shrink-0 text-[#f900fe]">
@@ -119,7 +105,21 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-lg md:text-xl">{t("contact.egyptPhone")}</p>
+                  <p className="text-lg md:text-xl">{t("contact.phone2")}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Sales Email */}
+            <div className="border border-white/30 rounded-[40px] bg-white/4 p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 shrink-0 text-[#f900fe]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
+                    <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-lg md:text-xl">{t("contact.salesEmail")}</p>
                 </div>
               </div>
             </div>

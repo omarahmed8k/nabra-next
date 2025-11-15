@@ -14,8 +14,8 @@ const config: Config = {
         primary: 'var(--primary)',
       },
       fontFamily: {
-        sans: ['var(--font-unbounded)', 'sans-serif'],
-        unbounded: ['var(--font-unbounded)', 'sans-serif'],
+        sans: ['Unbounded', 'sans-serif'],
+        unbounded: ['Unbounded', 'sans-serif'],
         alexandria: ['var(--font-alexandria)', 'sans-serif'],
       },
     },

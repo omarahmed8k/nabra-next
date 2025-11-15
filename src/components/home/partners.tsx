@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const partnerImages = [
+const items = [
   "1.png",
   "2.png",
   "3.png",
@@ -37,15 +37,15 @@ export default function Partners() {
   const pausedRef = useRef(false);
   const speed = 0.5; // pixels per frame (adjust for speed)
 
-  // Duplicate items to create a seamless loop
-  const items = [...partnerImages, ...partnerImages];
-
   useEffect(() => {
     const el = scrollerRef.current;
     if (!el) return;
 
-    const scroller = el; // capture non-null element for closures
+    const scroller = el;
     let rafId: number | null = null;
+    
+    // Start from middle position
+    scroller.scrollLeft = scroller.scrollWidth / 3;
 
     function step() {
       if (pausedRef.current) {
@@ -53,12 +53,11 @@ export default function Partners() {
         return;
       }
 
-      // advance
       scroller.scrollLeft += speed;
 
-      // when we've scrolled past the first half (one set), reset
-      if (scroller.scrollLeft >= scroller.scrollWidth / 2) {
-        scroller.scrollLeft -= scroller.scrollWidth / 2;
+      // Reset when reaching 2/3 of the scroll width
+      if (scroller.scrollLeft >= (scroller.scrollWidth / 3) * 2) {
+        scroller.scrollLeft = scroller.scrollWidth / 3;
       }
 
       rafId = requestAnimationFrame(step);
@@ -90,6 +89,7 @@ export default function Partners() {
             onMouseLeave={() => (pausedRef.current = false)}
             onTouchStart={() => (pausedRef.current = true)}
             onTouchEnd={() => (pausedRef.current = false)}
+            dir="ltr"
             className="overflow-x-auto overflow-y-hidden w-full border border-[#f0f0f0]/20 rounded-full scrollbar-hide outline-[1px] outline-[#f0f0f0]/10"
             style={{
               WebkitOverflowScrolling: "touch",
