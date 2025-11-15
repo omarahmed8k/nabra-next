@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-// Replace these filenames with your actual files placed in /public/images
 const partnerImages = [
   "1.png",
   "2.png",
@@ -102,7 +101,7 @@ export default function Partners() {
               {items.map((src, i) => (
                 <div key={`${src}-${i}`} className="inline-flex items-center">
                   <div
-                    className="inline-flex items-center justify-center rounded-full px-8 py-6 bg-transparent"
+                    className="inline-flex items-center justify-center rounded-full px-8 py-6"
                     style={{ minWidth: 220 }}
                   >
                     <div className="relative w-44 h-20 flex items-center justify-center">
@@ -111,7 +110,8 @@ export default function Partners() {
                         alt={src.replace(/[-.]/g, " ")}
                         width={176}
                         height={80}
-                        className="object-contain transition-all duration-300"
+                        className="object-contain transition-all duration-300 mix-blend-lighten opacity-80 hover:opacity-100"
+                        style={{ objectFit: 'contain', width: '176px', height: '80px' }}
                       />
                     </div>
                   </div>
