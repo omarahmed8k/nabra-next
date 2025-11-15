@@ -3,14 +3,15 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 const services = [
-  { key: "digital", image: "/images/services/social-media.jpg" },
-  { key: "documentaries", image: "/images/services/branding.jpg" },
-  { key: "activations", image: "/images/services/media-production.jpg" },
-  { key: "commercials", image: "/images/services/photography.jpg" },
-  { key: "reels", image: "/images/services/web-development.jpg" },
-  { key: "events", image: "/images/services/app-development.jpg" },
+  { key: "digital", image: "/images/services/social-media.jpg", slug: "digital-marketing" },
+  { key: "documentaries", image: "/images/services/branding.jpg", slug: "video-production" },
+  { key: "activations", image: "/images/services/media-production.jpg", slug: "event-production" },
+  { key: "commercials", image: "/images/services/photography.jpg", slug: "commercial-production" },
+  { key: "reels", image: "/images/services/web-development.jpg", slug: "software-development" },
+  { key: "events", image: "/images/services/app-development.jpg", slug: "event-management" },
 ];
 
 export default function Services() {
@@ -32,12 +33,16 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
           {services.map((service, index) => (
-            <motion.div
+            <Link
               key={service.key}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              href={`/services/${service.slug}`}
+              className="block"
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
               className="relative h-[400px] rounded-3xl overflow-hidden group cursor-pointer"
             >
               {/* Background Image */}
@@ -53,11 +58,12 @@ export default function Services() {
               
               {/* Title Overlay */}
               <div className="absolute inset-0 flex items-end p-8">
-                <h3 className="text-base font-bold text-white uppercase tracking-wide">
+                <h3 className="text-xs font-bold text-white uppercase tracking-wide">
                   {t(`items.${service.key}.title`)}
                 </h3>
               </div>
             </motion.div>
+            </Link>
           ))}
         </div>
       </div>

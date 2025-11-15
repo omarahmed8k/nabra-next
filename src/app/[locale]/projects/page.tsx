@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import ProjectsHero from "@/components/projects/projects-hero";
-import ProjectsFilter from "@/components/projects/projects-filter";
 import ProjectsGrid, {
   type Project,
 } from "@/components/projects/projects-grid";
@@ -16,6 +14,7 @@ const projects: Project[] = [
     size: "large-h",
     image: "/images/projects/1.jpg",
     description: "Comprehensive digital marketing campaign that drives engagement and builds brand awareness across multiple platforms.",
+    slug: "brand-campaign-2024",
   },
   {
     id: 2,
@@ -23,6 +22,7 @@ const projects: Project[] = [
     size: "large-h",
     image: "/images/projects/2.jpg",
     description: "High-impact product launch commercial that captures attention and drives conversions through compelling storytelling.",
+    slug: "product-launch-video",
   },
   {
     id: 3,
@@ -30,6 +30,7 @@ const projects: Project[] = [
     size: "small",
     image: "/images/projects/3.jpg",
     description: "Large-scale corporate event management with seamless execution and memorable experiences.",
+    slug: "corporate-event",
   },
   {
     id: 4,
@@ -37,6 +38,7 @@ const projects: Project[] = [
     size: "large-w",
     image: "/images/projects/4.jpg",
     description: "Complete brand identity redesign that reflects modern values and connects with target audiences.",
+    slug: "brand-identity-design",
   },
   {
     id: 5,
@@ -44,6 +46,7 @@ const projects: Project[] = [
     size: "large-v",
     image: "/images/projects/5.jpg",
     description: "Viral social media marketing campaign that creates buzz and drives organic reach across platforms.",
+    slug: "social-media-campaign",
   },
   {
     id: 6,
@@ -51,6 +54,7 @@ const projects: Project[] = [
     size: "large-h",
     image: "/images/projects/6.jpg",
     description: "Multi-episode documentary production that tells compelling stories and engages audiences.",
+    slug: "documentary-series",
   },
   {
     id: 7,
@@ -58,6 +62,7 @@ const projects: Project[] = [
     size: "small",
     image: "/images/projects/7.jpg",
     description: "Interactive product activation experience that creates memorable brand touchpoints.",
+    slug: "product-activation",
   },
 ];
 
