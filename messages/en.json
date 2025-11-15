@@ -9,7 +9,6 @@
     "title": "Standing Tall with Our Esteemed Brand Partners",
     "see": "See All Projects"
   },
-
   "services": {
     "title": "Discover our Network",
     "subtitle": "Our Services",
@@ -47,7 +46,6 @@
         "title": "Software Solutions",
         "description": "Custom software development"
       },
-
       "videoProduction": {
         "title": "Video Production",
         "description": "Professional video content creation"
@@ -63,6 +61,36 @@
       "printing": {
         "title": "Printing",
         "description": "Print design and production"
+      }
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "button": "Get in Touch"
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "We follow a proven methodology to deliver exceptional results",
+      "steps": {
+        "1": {
+          "step": "01",
+          "title": "Discovery",
+          "description": "Understanding your goals and vision"
+        },
+        "2": {
+          "step": "02",
+          "title": "Strategy",
+          "description": "Creating a comprehensive plan"
+        },
+        "3": {
+          "step": "03",
+          "title": "Execution",
+          "description": "Bringing ideas to life"
+        },
+        "4": {
+          "step": "04",
+          "title": "Delivery",
+          "description": "Launching and measuring success"
+        }
       }
     }
   },
@@ -88,7 +116,51 @@
         "label": "PARTNERS"
       }
     },
-    "cta": "Know More About Us"
+    "cta": "Know More About Us",
+    "missionVision": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "To ignite brands through transformative storytelling and immersive experiences that inspire, engage, and convert across all touchpoints."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the leading creative agency that sets the benchmark for excellence in visual storytelling and brand transformation across the region."
+      }
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "We believe in the power of creativity and innovation to transform brands and create lasting impressions.",
+      "paragraph2": "Every collaboration is a chance to craft experiences that resonate, inspire action, and build meaningful connections."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": {
+        "innovation": {
+          "title": "Innovation",
+          "description": "We constantly push boundaries and explore new creative horizons."
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "We work closely with clients to bring their vision to life."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We deliver nothing but the highest quality in everything we do."
+        },
+        "creativity": {
+          "title": "Creativity",
+          "description": "We bring fresh perspectives and bold ideas to every project."
+        },
+        "results": {
+          "title": "Results-Driven",
+          "description": "We focus on delivering measurable impact and ROI."
+        },
+        "passion": {
+          "title": "Passion",
+          "description": "We love what we do and it shows in every project."
+        }
+      }
+    }
   },
   "testimonials": {
     "title": "Our Client Chronicles:",
@@ -111,7 +183,8 @@
       }
     },
     "prev": "Previous testimonial",
-    "next": "Next testimonial"
+    "next": "Next testimonial",
+    "dotAria": "Go to testimonial {index}"
   },
   "video": {
     "title": "Video"
@@ -145,6 +218,76 @@
     "subtitle": "We're all ears!",
     "cta": "Let's Collaborate"
   },
+  "contactPage": {
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Got questions, project ideas, or just want to say hi? We're all ears!"
+    },
+    "form": {
+      "title": "Send us a message",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "fields": {
+        "name": {
+          "label": "Full Name *",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Email Address *",
+          "placeholder": "john@example.com"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+20 111 860 0015"
+        },
+        "company": {
+          "label": "Company Name",
+          "placeholder": "Your Company"
+        },
+        "message": {
+          "label": "Message *",
+          "placeholder": "Tell us about your project..."
+        }
+      },
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "sections": {
+        "office": {
+          "title": "Cairo Office",
+          "details": ["Nasr City, Cairo, Egypt"]
+        },
+        "email": {
+          "title": "Email",
+          "details": ["info@nabra.com", "contact@nabra.com"]
+        },
+        "phone": {
+          "title": "Phone",
+          "details": ["+20 111 860 0015", "+20 23 78 79 772"]
+        },
+        "hours": {
+          "title": "Business Hours",
+          "details": ["Sunday - Thursday: 9:00 AM - 6:00 PM", "Friday - Saturday: Closed"]
+        }
+      }
+    },
+    "social": {
+      "title": "Follow Us",
+      "items": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter"
+      }
+    },
+    "map": {
+      "label": "Map Location"
+    },
+    "cta": {
+      "title": "Ready to make your next big move?",
+      "subtitle": "Let's collaborate and create something amazing together"
+    }
+  },
   "projects": {
     "title": "Our Handpicked Featured Portfolio",
     "see": "See All Projects",
@@ -154,6 +297,94 @@
       "video": "Video",
       "events": "Events",
       "branding": "Branding"
+    },
+    "cards": {
+      "1": {
+        "title": "Digital Solutions",
+        "description": "Enhance your brand's impact with our corporate video expertise. We craft engaging content for every business touchpoint."
+      },
+      "2": {
+        "title": "Immersive Storytelling",
+        "description": "High-impact launch films that capture attention and drive conversions."
+      },
+      "3": {
+        "title": "Creative Strategy",
+        "description": "Bold ideas that keep your brand top of mind."
+      },
+      "4": {
+        "title": "Corporate Films",
+        "description": "Premium productions that translate complex stories into compelling visuals."
+      },
+      "5": {
+        "title": "Brand Experiences",
+        "description": "Transform live moments into memorable, share-worthy experiences."
+      },
+      "6": {
+        "title": "Campaign Execution",
+        "description": "From concept to delivery, we orchestrate seamless brand journeys."
+      },
+      "7": {
+        "title": "Activation Moments",
+        "description": "Interactive installations that turn audiences into advocates."
+      }
+    },
+    "hero": {
+      "title": "Our Projects",
+      "subtitle": "Explore our portfolio of exceptional work"
+    },
+    "stats": {
+      "items": {
+        "projects": {
+          "value": "1000+",
+          "label": "Projects Completed"
+        },
+        "clients": {
+          "value": "200+",
+          "label": "Happy Clients"
+        },
+        "team": {
+          "value": "50+",
+          "label": "Team Members"
+        },
+        "experience": {
+          "value": "15+",
+          "label": "Years Experience"
+        }
+      }
+    },
+    "cta": {
+      "title": "Let's create something amazing together",
+      "button": "Start Your Project"
+    },
+    "items": {
+      "1": {
+        "title": "Brand Campaign 2024",
+        "description": "Comprehensive digital marketing campaign that drives engagement and builds brand awareness across multiple platforms."
+      },
+      "2": {
+        "title": "Product Launch Video",
+        "description": "High-impact product launch commercial that captures attention and drives conversions through compelling storytelling."
+      },
+      "3": {
+        "title": "Corporate Event",
+        "description": "Large-scale corporate event management with seamless execution and memorable experiences."
+      },
+      "4": {
+        "title": "Brand Identity Design",
+        "description": "Complete brand identity redesign that reflects modern values and connects with target audiences."
+      },
+      "5": {
+        "title": "Social Media Campaign",
+        "description": "Viral social media marketing campaign that creates buzz and drives organic reach across platforms."
+      },
+      "6": {
+        "title": "Documentary Series",
+        "description": "Multi-episode documentary production that tells compelling stories and engages audiences."
+      },
+      "7": {
+        "title": "Product Activation",
+        "description": "Interactive product activation experience that creates memorable brand touchpoints."
+      }
     }
   },
   "footer": {
@@ -189,8 +420,8 @@
     "lang": {
       "en": "EN",
       "ar": "AR"
-    }
-    ,"aria": {
+    },
+    "aria": {
       "toggleMenu": "Toggle menu"
     }
   }
