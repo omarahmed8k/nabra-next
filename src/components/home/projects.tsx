@@ -84,7 +84,7 @@ export default function Projects() {
                   src={projects[0].image}
                   alt="Project 1"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                 />
                 {/* Image Overlay */}
                 <div 
@@ -164,7 +164,7 @@ export default function Projects() {
                     src={projects[1].image}
                     alt="Project 2"
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
                   <div 
                     className="absolute inset-0"
@@ -240,7 +240,7 @@ export default function Projects() {
                     src={projects[2].image}
                     alt="Project 3"
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
                   <div 
                     className="absolute inset-0"
@@ -315,7 +315,7 @@ export default function Projects() {
                     src={projects[3].image}
                     alt="Project 4"
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
                   <div 
                     className="absolute inset-0"
@@ -390,7 +390,7 @@ export default function Projects() {
                     src={projects[4].image}
                     alt="Project 5"
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
                   <div 
                     className="absolute inset-0"
@@ -466,7 +466,7 @@ export default function Projects() {
                     src={projects[5].image}
                     alt="Project 6"
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
                   <div 
                     className="absolute inset-0"
@@ -541,7 +541,7 @@ export default function Projects() {
                     src={projects[6].image}
                     alt="Project 7"
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
                   <div 
                     className="absolute inset-0"

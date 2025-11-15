@@ -15,7 +15,7 @@ export default function ServicesHero() {
           src="/images/hero-bg.jpg"
           alt="Services Background"
           fill
-          className="object-cover"
+          className="object-cover bg-white"
           priority
           quality={100}
         />

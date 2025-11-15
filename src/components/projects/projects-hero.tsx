@@ -12,7 +12,7 @@ export default function ProjectsHero() {
           src="/images/hero-bg.jpg"
           alt="Projects Background"
           fill
-          className="object-cover"
+          className="object-cover bg-white"
           priority
           quality={100}
         />

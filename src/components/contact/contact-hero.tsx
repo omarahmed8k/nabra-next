@@ -12,7 +12,7 @@ export default function ContactHero() {
           src="/images/hero-bg.jpg"
           alt="Contact Background"
           fill
-          className="object-cover"
+          className="object-cover bg-white"
           priority
           quality={100}
         />

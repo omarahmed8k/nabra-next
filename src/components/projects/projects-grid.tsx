@@ -68,7 +68,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[0].image}
                       alt={projects[0].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"
@@ -145,7 +145,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[1].image}
                       alt={projects[1].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"
@@ -223,7 +223,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[2].image}
                       alt={projects[2].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"
@@ -300,7 +300,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[3].image}
                       alt={projects[3].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"
@@ -377,7 +377,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[4].image}
                       alt={projects[4].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"
@@ -455,7 +455,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[5].image}
                       alt={projects[5].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"
@@ -532,7 +532,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                       src={projects[6].image}
                       alt={projects[6].title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                     />
                     <div 
                       className="absolute inset-0"

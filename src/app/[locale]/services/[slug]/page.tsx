@@ -142,7 +142,7 @@ export default function ServiceDetailPage({
           src={service.image}
           alt={service.title}
           fill
-          className="object-cover"
+          className="object-cover bg-white"
           priority
         />
         <div className="absolute inset-0 bg-[#000000]/70" />
@@ -338,7 +338,7 @@ export default function ServiceDetailPage({
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300 bg-white"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#000000] to-transparent flex items-end p-6">
                   <h3 className="text-xl font-bold text-[#f0f0f0]">

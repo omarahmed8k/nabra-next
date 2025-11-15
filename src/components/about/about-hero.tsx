@@ -15,7 +15,7 @@ export default function AboutHero() {
           src="/images/hero-bg.jpg"
           alt="About Background"
           fill
-          className="object-cover"
+          className="object-cover bg-white"
           priority
           quality={100}
         />

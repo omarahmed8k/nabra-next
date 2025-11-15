@@ -64,7 +64,7 @@ export default function ProjectDetailPage({
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover"
+          className="object-cover bg-white"
           priority
         />
         <div className="absolute inset-0 bg-[#000000]/70" />
@@ -193,7 +193,7 @@ export default function ProjectDetailPage({
                   src={img}
                   alt={`${project.title} - Image ${index + 1}`}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-cover hover:scale-105 transition-transform duration-300 bg-white"
                 />
               </motion.div>
             ))}
