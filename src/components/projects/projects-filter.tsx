@@ -1,6 +1,6 @@
 "use client";
 
-const categories = ["All", "Digital", "Video", "Events", "Branding"];
+import { useTranslations } from "next-intl";
 
 interface ProjectsFilterProps {
   activeCategory: string;
@@ -11,6 +11,17 @@ export default function ProjectsFilter({
   activeCategory,
   onCategoryChange,
 }: ProjectsFilterProps) {
+  const t = useTranslations("projects");
+
+  const categories = [
+    t("categories.all"),
+    t("categories.digital"),
+    t("categories.video"),
+    t("categories.events"),
+    t("categories.branding"),
+  ];
+
+  
   return (
     <section className="py-12 bg-black border-b border-[#f0f0f0]/10">
       <div className="container mx-auto px-6">

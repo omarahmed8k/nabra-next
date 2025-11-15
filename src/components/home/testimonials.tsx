@@ -73,14 +73,14 @@ export default function Testimonials() {
             <button
               onClick={prev}
               className="w-12 h-12 rounded-full bg-[#000000] border border-[#f0f0f0]/20 hover:bg-[#f900fe] hover:text-[#f0f0f0] hover:border-[#f900fe] transition-all duration-300 flex items-center justify-center font-bold text-[#f0f0f0]"
-              aria-label="Previous testimonial"
+                aria-label={t('prev')}
             >
               ←
             </button>
             <button
               onClick={next}
               className="w-12 h-12 rounded-full bg-[#000000] border border-[#f0f0f0]/20 hover:bg-[#f900fe] hover:text-[#f0f0f0] hover:border-[#f900fe] transition-all duration-300 flex items-center justify-center font-bold text-[#f0f0f0]"
-              aria-label="Next testimonial"
+              aria-label={t('next')}
             >
               →
             </button>

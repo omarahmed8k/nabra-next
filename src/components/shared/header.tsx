@@ -1,13 +1,14 @@
 "use client";
 
 import { Link, usePathname } from "@/i18n/routing";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Header() {
   const locale = useLocale();
+  const t = useTranslations("header");
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -52,11 +53,11 @@ export default function Header() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-2 lg:gap-3">
               {[
-                { href: "/", label: "Home" },
-                { href: "/projects", label: "Projects" },
-                { href: "/about", label: "About" },
-                { href: "/services", label: "Services" },
-                { href: "/careers", label: "Careers" },
+                { href: "/", label: t("nav.home") },
+                { href: "/projects", label: t("nav.projects") },
+                { href: "/about", label: t("nav.about") },
+                { href: "/services", label: t("nav.services") },
+                { href: "/careers", label: t("nav.careers") },
               ].map((item) => (
                 <Link
                   key={item.href}
@@ -84,7 +85,7 @@ export default function Header() {
                 href="/contact"
                 className="ml-2 px-8 py-2.5 text-sm font-semibold bg-[#f0f0f0] text-black rounded-full hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Let&apos;s Talk
+                {t("cta.letsTalk")}
               </Link>
 
               {/* Language Switcher */}
@@ -99,7 +100,7 @@ export default function Header() {
                       : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
-                  EN
+                  {t("lang.en")}
                 </button>
                 <button
                   onClick={() => {
@@ -111,7 +112,7 @@ export default function Header() {
                       : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
-                  AR
+                  {t("lang.ar")}
                 </button>
               </div>
             </div>
@@ -120,7 +121,7 @@ export default function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden p-2 text-[#f0f0f0] hover:bg-white/5 rounded-lg transition-all duration-300"
-              aria-label="Toggle menu"
+              aria-label={t("aria.toggleMenu")}
             >
               <svg
                 className="w-6 h-6"
@@ -150,10 +151,10 @@ export default function Header() {
               className="md:hidden mt-4 pb-4 space-y-2"
             >
               {[
-                { href: "/", label: "Home" },
-                { href: "/projects", label: "Projects" },
-                { href: "/about", label: "About" },
-                { href: "/services", label: "Services" },
+                { href: "/", label: t("nav.home") },
+                { href: "/projects", label: t("nav.projects") },
+                { href: "/about", label: t("nav.about") },
+                { href: "/services", label: t("nav.services") },
               ].map((item) => (
                 <Link
                   key={item.href}
@@ -173,7 +174,7 @@ export default function Header() {
                 className="block px-4 py-3 mt-4 bg-[#f0f0f0] text-black text-center rounded-full hover:bg-white transition-all duration-300 shadow-lg text-sm font-semibold"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Let&apos;s Talk
+                {t("cta.letsTalk")}
               </Link>
 
               {/* Mobile Language Switcher */}
@@ -189,7 +190,7 @@ export default function Header() {
                       : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
-                  EN
+                  {t("lang.en")}
                 </button>
                 <button
                   onClick={() => {
@@ -202,7 +203,7 @@ export default function Header() {
                       : "text-[#f0f0f0]/60 hover:text-white hover:bg-white/5 hover:scale-105"
                   }`}
                 >
-                  AR
+                  {t("lang.ar")}
                 </button>
               </div>
             </motion.div>
