@@ -74,7 +74,7 @@ export default function Projects() {
                   className="text-white text-center font-bold text-3xl md:text-4xl leading-none"
                   style={{ textShadow: 'none' }}
                 >
-                  Digital Solutions
+                  {t("cards.1.title")}
                 </h6>
               </div>
 
@@ -82,7 +82,7 @@ export default function Projects() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                 <Image
                   src={projects[0].image}
-                  alt="Project 1"
+                  alt={t("cards.1.title")}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                 />
@@ -99,7 +99,7 @@ export default function Projects() {
               {/* Content Text (appears on hover) */}
               <div className="absolute inset-x-8 top-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white/80 text-center text-sm md:text-base">
-                  Enhance your brand&apos;s impact with our corporate video expertise. We create engaging content for businesses, from promotions to training materials.
+                  {t("cards.1.description")}
                 </p>
               </div>
 
@@ -156,13 +156,13 @@ export default function Projects() {
                     className="text-white text-center font-bold text-3xl md:text-4xl leading-none"
                     style={{ textShadow: 'none' }}
                   >
-                    Digital Solutions
+                    {t("cards.2.title")}
                   </h6>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={projects[1].image}
-                    alt="Project 2"
+                    alt={t("cards.2.title")}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
@@ -176,7 +176,7 @@ export default function Projects() {
                 </div>
                 <div className="absolute inset-x-8 top-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/80 text-center text-sm md:text-base">
-                    Enhance your brand&apos;s impact with our corporate video expertise.
+                    {t("cards.2.description")}
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -232,13 +232,13 @@ export default function Projects() {
                     className="text-white text-center font-bold text-2xl md:text-3xl leading-none"
                     style={{ textShadow: 'none' }}
                   >
-                    Digital Solutions
+                    {t("cards.3.title")}
                   </h6>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={projects[2].image}
-                    alt="Project 3"
+                    alt={t("cards.3.title")}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
@@ -252,7 +252,7 @@ export default function Projects() {
                 </div>
                 <div className="absolute inset-x-8 top-20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/80 text-center text-xs md:text-sm">
-                    Enhance your brand&apos;s impact.
+                    {t("cards.3.description")}
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -307,13 +307,13 @@ export default function Projects() {
                     className="text-white text-center font-bold text-3xl md:text-4xl leading-none"
                     style={{ textShadow: 'none' }}
                   >
-                    Digital Solutions
+                    {t("cards.4.title")}
                   </h6>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={projects[3].image}
-                    alt="Project 4"
+                    alt={t("cards.4.title")}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
@@ -327,7 +327,7 @@ export default function Projects() {
                 </div>
                 <div className="absolute inset-x-8 top-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/80 text-center text-sm md:text-base">
-                    Enhance your brand&apos;s impact with our corporate video expertise.
+                    {t("cards.4.description")}
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -382,13 +382,13 @@ export default function Projects() {
                     className="text-white text-center font-bold text-3xl md:text-4xl leading-none"
                     style={{ textShadow: 'none' }}
                   >
-                    Digital Solutions
+                    {t("cards.5.title")}
                   </h6>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={projects[4].image}
-                    alt="Project 5"
+                    alt={t("cards.5.title")}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
@@ -402,7 +402,7 @@ export default function Projects() {
                 </div>
                 <div className="absolute inset-x-8 top-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/80 text-center text-sm md:text-base">
-                    Enhance your brand&apos;s impact with our corporate video expertise.
+                    {t("cards.5.description")}
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -458,13 +458,13 @@ export default function Projects() {
                     className="text-white text-center font-bold text-3xl md:text-4xl leading-none"
                     style={{ textShadow: 'none' }}
                   >
-                    Digital Solutions
+                    {t("cards.6.title")}
                   </h6>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={projects[5].image}
-                    alt="Project 6"
+                    alt={t("cards.6.title")}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
@@ -478,7 +478,7 @@ export default function Projects() {
                 </div>
                 <div className="absolute inset-x-8 top-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/80 text-center text-sm md:text-base">
-                    Enhance your brand&apos;s impact with our corporate video expertise.
+                    {t("cards.6.description")}
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
@@ -533,13 +533,13 @@ export default function Projects() {
                     className="text-white text-center font-bold text-2xl md:text-3xl leading-none"
                     style={{ textShadow: 'none' }}
                   >
-                    Digital Solutions
+                    {t("cards.7.title")}
                   </h6>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={projects[6].image}
-                    alt="Project 7"
+                    alt={t("cards.7.title")}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110 bg-white"
                   />
@@ -553,7 +553,7 @@ export default function Projects() {
                 </div>
                 <div className="absolute inset-x-8 top-20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white/80 text-center text-xs md:text-sm">
-                    Enhance your brand&apos;s impact.
+                    {t("cards.7.description")}
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">

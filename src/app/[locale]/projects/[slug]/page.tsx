@@ -1,68 +1,47 @@
 "use client";
 
+import { use } from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedCTAButton from "@/components/shared/animated-cta-button";
-
-// Mock data - replace with actual data fetching
-const projectsData: Record<string, {
-  title: string;
-  category: string;
-  description: string;
-  challenge: string;
-  solution: string;
-  results: string[];
-  image: string;
-  images: string[];
-  client: string;
-  date: string;
-  services: string[];
-}> = {
-  orkinz: {
-    title: "Orkinz Brand Identity",
-    category: "Branding",
-    description: "A comprehensive brand identity design project for Orkinz, focusing on creating a modern and memorable visual identity that resonates with their target audience.",
-    challenge: "Orkinz needed a fresh brand identity that would differentiate them in a competitive market while maintaining professional credibility and appeal to their diverse client base.",
-    solution: "We developed a complete brand identity system including logo design, color palette, typography, and brand guidelines. The design language combines modern aesthetics with timeless elements to ensure longevity.",
-    results: [
-      "40% increase in brand recognition",
-      "Improved customer engagement across all platforms",
-      "Successful launch across 5 countries",
-      "Award-winning design recognition"
-    ],
-    image: "/images/projects/orkinz.jpg",
-    images: [
-      "/images/projects/orkinz-1.jpg",
-      "/images/projects/orkinz-2.jpg",
-      "/images/projects/orkinz-3.jpg"
-    ],
-    client: "Orkinz Corporation",
-    date: "2024",
-    services: ["Brand Identity", "Logo Design", "Brand Guidelines", "Visual Design"]
-  }
-};
+import { useTranslations } from "next-intl";
 
 export default function ProjectDetailPage({
   params,
 }: {
-  params: { slug: string; locale: string };
+  params: Promise<{ slug: string; locale: string }>;
 }) {
-  // For testing: use orkinz data for all project slugs
-  // Later you can switch back to: const project = projectsData[params.slug];
-  const project = projectsData["orkinz"];
+  const { slug } = use(params);
+  const t = useTranslations("projectDetail");
 
-  if (!project) {
+  // For testing: use orkinz data for all project slugs
+  // Later you can map slug to different project keys
+  // Example: const projectKey = slug === "orkinz" ? "orkinz" : "orkinz";
+  const projectKey = slug === "orkinz" ? "orkinz" : "orkinz"; // Currently only supporting orkinz
+
+  // Check if project exists in translations
+  if (!t.has(`data.${projectKey}.title`)) {
     notFound();
   }
+
+  // Get image paths (these remain in code as they're file references)
+  const images = {
+    main: "/images/projects/orkinz.jpg",
+    gallery: [
+      "/images/projects/orkinz-1.jpg",
+      "/images/projects/orkinz-2.jpg",
+      "/images/projects/orkinz-3.jpg"
+    ]
+  };
 
   return (
     <div className="min-h-screen bg-[#000000]">
       {/* Hero Section */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src={project.image}
-          alt={project.title}
+          src={images.main}
+          alt={t(`data.${projectKey}.imageAlt`)}
           fill
           className="object-cover bg-white"
           priority
@@ -76,10 +55,10 @@ export default function ProjectDetailPage({
             transition={{ duration: 0.8 }}
           >
             <span className="text-[#f900fe] font-semibold text-sm uppercase tracking-wider">
-              {project.category}
+              {t(`data.${projectKey}.category`)}
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-[#f0f0f0] mt-4">
-              {project.title}
+              {t(`data.${projectKey}.title`)}
             </h1>
           </motion.div>
         </div>
@@ -90,22 +69,22 @@ export default function ProjectDetailPage({
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-[#f900fe] font-semibold mb-2">Client</h3>
-              <p className="text-[#f0f0f0]">{project.client}</p>
+              <h3 className="text-[#f900fe] font-semibold mb-2">{t("meta.client")}</h3>
+              <p className="text-[#f0f0f0]">{t(`data.${projectKey}.client`)}</p>
             </div>
             <div>
-              <h3 className="text-[#f900fe] font-semibold mb-2">Date</h3>
-              <p className="text-[#f0f0f0]">{project.date}</p>
+              <h3 className="text-[#f900fe] font-semibold mb-2">{t("meta.date")}</h3>
+              <p className="text-[#f0f0f0]">{t(`data.${projectKey}.date`)}</p>
             </div>
             <div>
-              <h3 className="text-[#f900fe] font-semibold mb-2">Services</h3>
+              <h3 className="text-[#f900fe] font-semibold mb-2">{t("meta.services")}</h3>
               <div className="flex flex-wrap gap-2">
-                {project.services.map((service) => (
+                {[1, 2, 3, 4].map((num) => (
                   <span
-                    key={service}
+                    key={num}
                     className="px-3 py-1 bg-[#f0f0f0]/10 rounded-full text-[#f0f0f0] text-sm"
                   >
-                    {service}
+                    {t(`data.${projectKey}.services.${num}`)}
                   </span>
                 ))}
               </div>
@@ -123,10 +102,10 @@ export default function ProjectDetailPage({
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#f0f0f0] mb-6">
-              Project Overview
+              {t("sections.overview")}
             </h2>
             <p className="text-lg text-[#f0f0f0]/80 leading-relaxed">
-              {project.description}
+              {t(`data.${projectKey}.description`)}
             </p>
           </motion.div>
         </div>
@@ -143,10 +122,10 @@ export default function ProjectDetailPage({
               className="bg-[#000000] border border-[#f0f0f0]/10 p-8 rounded-2xl"
             >
               <h3 className="text-2xl font-bold text-[#f900fe] mb-4">
-                The Challenge
+                {t("sections.challenge")}
               </h3>
               <p className="text-[#f0f0f0]/80 leading-relaxed">
-                {project.challenge}
+                {t(`data.${projectKey}.challenge`)}
               </p>
             </motion.div>
 
@@ -157,10 +136,10 @@ export default function ProjectDetailPage({
               className="bg-[#000000] border border-[#f0f0f0]/10 p-8 rounded-2xl"
             >
               <h3 className="text-2xl font-bold text-[#f900fe] mb-4">
-                Our Solution
+                {t("sections.solution")}
               </h3>
               <p className="text-[#f0f0f0]/80 leading-relaxed">
-                {project.solution}
+                {t(`data.${projectKey}.solution`)}
               </p>
             </motion.div>
           </div>
@@ -176,11 +155,11 @@ export default function ProjectDetailPage({
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-[#f0f0f0] mb-12 text-center"
           >
-            Project Gallery
+            {t("sections.gallery")}
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {project.images.map((img, index) => (
+            {images.gallery.map((img, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -191,7 +170,7 @@ export default function ProjectDetailPage({
               >
                 <Image
                   src={img}
-                  alt={`${project.title} - Image ${index + 1}`}
+                  alt={t(`data.${projectKey}.galleryAlt`, { index: index + 1 })}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300 bg-white"
                 />
@@ -210,22 +189,22 @@ export default function ProjectDetailPage({
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#f0f0f0] mb-8">
-              Results & Impact
+              {t("sections.results")}
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              {project.results.map((result, index) => (
+              {[1, 2, 3, 4].map((num) => (
                 <motion.div
-                  key={index}
+                  key={num}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={{ delay: num * 0.1 }}
                   className="flex items-start gap-3"
                 >
                   <div className="w-6 h-6 rounded-full bg-[#f900fe] flex items-center justify-center shrink-0 mt-1">
                     <span className="text-[#f0f0f0] text-sm">✓</span>
                   </div>
-                  <p className="text-[#f0f0f0]/80">{result}</p>
+                  <p className="text-[#f0f0f0]/80">{t(`data.${projectKey}.results.${num}`)}</p>
                 </motion.div>
               ))}
             </div>
@@ -242,13 +221,13 @@ export default function ProjectDetailPage({
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#f0f0f0] mb-6">
-              Ready to start your project?
+              {t("cta.title")}
             </h2>
             <p className="text-[#f0f0f0]/80 mb-8 text-lg">
-              Let&apos;s create something amazing together
+              {t("cta.subtitle")}
             </p>
             <AnimatedCTAButton href="/contact">
-              Get In Touch
+              {t("cta.button")}
             </AnimatedCTAButton>
           </motion.div>
         </div>

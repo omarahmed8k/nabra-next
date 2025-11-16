@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import AnimatedCTAButton from "@/components/shared/animated-cta-button";
+import { useTranslations } from "next-intl";
 
 export default function ServicesCTA() {
+  const t = useTranslations("services.cta");
+
   return (
     <section className="py-20 bg-linear-to-br from-[#f900fe] to-black text-[#f0f0f0]">
       <div className="container mx-auto px-6 text-center">
@@ -13,10 +16,10 @@ export default function ServicesCTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Ready to start your project?
+            {t("title")}
           </h2>
           <AnimatedCTAButton href="/contact">
-            Get in Touch
+            {t("button")}
           </AnimatedCTAButton>
         </motion.div>
       </div>

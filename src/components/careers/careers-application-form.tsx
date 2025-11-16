@@ -3,8 +3,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import AnimatedCTAButton from "@/components/shared/animated-cta-button";
+import { useTranslations } from "next-intl";
 
 export default function CareersApplicationForm() {
+  const t = useTranslations("careersPage.form");
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,7 +22,7 @@ export default function CareersApplicationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Application submitted:", formData);
-    alert("Thank you for your application! We'll get back to you soon.");
+    alert(t("success"));
     setFormData({
       name: "",
       email: "",
@@ -60,10 +63,10 @@ export default function CareersApplicationForm() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#f0f0f0] mb-4 text-center">
-              Apply Now
+              {t("title")}
             </h2>
             <p className="text-[#f0f0f0]/80 text-center mb-12">
-              Fill out the form below and upload your resume to join our team
+              {t("subtitle")}
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -73,7 +76,7 @@ export default function CareersApplicationForm() {
                   htmlFor="name"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Full Name *
+                  {t("fields.name.label")}
                 </label>
                 <input
                   type="text"
@@ -83,7 +86,7 @@ export default function CareersApplicationForm() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-                  placeholder="John Doe"
+                  placeholder={t("fields.name.placeholder")}
                 />
               </div>
 
@@ -93,7 +96,7 @@ export default function CareersApplicationForm() {
                   htmlFor="email"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Email Address *
+                  {t("fields.email.label")}
                 </label>
                 <input
                   type="email"
@@ -103,7 +106,7 @@ export default function CareersApplicationForm() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-                  placeholder="john@example.com"
+                  placeholder={t("fields.email.placeholder")}
                 />
               </div>
 
@@ -113,7 +116,7 @@ export default function CareersApplicationForm() {
                   htmlFor="phone"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Phone Number *
+                  {t("fields.phone.label")}
                 </label>
                 <input
                   type="tel"
@@ -123,7 +126,7 @@ export default function CareersApplicationForm() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-                  placeholder="+20 111 860 0015"
+                  placeholder={t("fields.phone.placeholder")}
                 />
               </div>
 
@@ -133,7 +136,7 @@ export default function CareersApplicationForm() {
                   htmlFor="position"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Position Applying For *
+                  {t("fields.position.label")}
                 </label>
                 <select
                   id="position"
@@ -143,14 +146,14 @@ export default function CareersApplicationForm() {
                   required
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
                 >
-                  <option value="">Select a position</option>
-                  <option value="software-developer">Software Developer</option>
-                  <option value="ui-ux-designer">UI/UX Designer</option>
-                  <option value="video-editor">Video Editor</option>
-                  <option value="motion-graphics">Motion Graphics Artist</option>
-                  <option value="project-manager">Project Manager</option>
-                  <option value="marketing-specialist">Marketing Specialist</option>
-                  <option value="other">Other</option>
+                  <option value="">{t("fields.position.placeholder")}</option>
+                  <option value="software-developer">{t("fields.position.options.softwareDeveloper")}</option>
+                  <option value="ui-ux-designer">{t("fields.position.options.uiUxDesigner")}</option>
+                  <option value="video-editor">{t("fields.position.options.videoEditor")}</option>
+                  <option value="motion-graphics">{t("fields.position.options.motionGraphics")}</option>
+                  <option value="project-manager">{t("fields.position.options.projectManager")}</option>
+                  <option value="marketing-specialist">{t("fields.position.options.marketingSpecialist")}</option>
+                  <option value="other">{t("fields.position.options.other")}</option>
                 </select>
               </div>
 
@@ -160,7 +163,7 @@ export default function CareersApplicationForm() {
                   htmlFor="linkedin"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  LinkedIn Profile
+                  {t("fields.linkedin.label")}
                 </label>
                 <input
                   type="url"
@@ -169,7 +172,7 @@ export default function CareersApplicationForm() {
                   value={formData.linkedin}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-                  placeholder="https://linkedin.com/in/johndoe"
+                  placeholder={t("fields.linkedin.placeholder")}
                 />
               </div>
 
@@ -179,7 +182,7 @@ export default function CareersApplicationForm() {
                   htmlFor="portfolio"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Portfolio / Website
+                  {t("fields.portfolio.label")}
                 </label>
                 <input
                   type="url"
@@ -188,7 +191,7 @@ export default function CareersApplicationForm() {
                   value={formData.portfolio}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200"
-                  placeholder="https://yourportfolio.com"
+                  placeholder={t("fields.portfolio.placeholder")}
                 />
               </div>
 
@@ -198,7 +201,7 @@ export default function CareersApplicationForm() {
                   htmlFor="resume"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Resume / CV *
+                  {t("fields.resume.label")}
                 </label>
                 <div className="relative">
                   <input
@@ -212,7 +215,7 @@ export default function CareersApplicationForm() {
                   />
                 </div>
                 <p className="text-[#f0f0f0]/40 text-sm mt-2">
-                  Accepted formats: PDF, DOC, DOCX (Max 5MB)
+                  {t("fields.resume.helper")}
                 </p>
               </div>
 
@@ -222,7 +225,7 @@ export default function CareersApplicationForm() {
                   htmlFor="coverLetter"
                   className="block text-[#f0f0f0] font-semibold mb-2"
                 >
-                  Cover Letter / Message *
+                  {t("fields.coverLetter.label")}
                 </label>
                 <textarea
                   id="coverLetter"
@@ -232,12 +235,12 @@ export default function CareersApplicationForm() {
                   required
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg bg-[#000000] border border-[#f0f0f0]/20 text-[#f0f0f0] focus:border-[#f900fe] focus:outline-none focus:ring-2 focus:ring-[#f900fe]/20 transition-all duration-200 resize-none"
-                  placeholder="Tell us why you'd be a great fit for our team..."
+                  placeholder={t("fields.coverLetter.placeholder")}
                 />
               </div>
 
               <AnimatedCTAButton type="submit" className="w-full">
-                Submit Application
+                {t("submit")}
               </AnimatedCTAButton>
             </form>
           </motion.div>

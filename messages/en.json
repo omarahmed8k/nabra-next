@@ -424,5 +424,275 @@
     "aria": {
       "toggleMenu": "Toggle menu"
     }
+  },
+  "projectDetail": {
+    "meta": {
+      "client": "Client",
+      "date": "Date",
+      "services": "Services"
+    },
+    "sections": {
+      "overview": "Project Overview",
+      "challenge": "The Challenge",
+      "solution": "Our Solution",
+      "gallery": "Project Gallery",
+      "results": "Results & Impact"
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "subtitle": "Let's create something amazing together",
+      "button": "Get In Touch"
+    },
+    "data": {
+      "orkinz": {
+        "title": "Orkinz Brand Identity",
+        "category": "Branding",
+        "description": "A comprehensive brand identity design project for Orkinz, focusing on creating a modern and memorable visual identity that resonates with their target audience.",
+        "challenge": "Orkinz needed a fresh brand identity that would differentiate them in a competitive market while maintaining professional credibility and appeal to their diverse client base.",
+        "solution": "We developed a complete brand identity system including logo design, color palette, typography, and brand guidelines. The design language combines modern aesthetics with timeless elements to ensure longevity.",
+        "results": {
+          "1": "40% increase in brand recognition",
+          "2": "Improved customer engagement across all platforms",
+          "3": "Successful launch across 5 countries",
+          "4": "Award-winning design recognition"
+        },
+        "client": "Orkinz Corporation",
+        "date": "2024",
+        "services": {
+          "1": "Brand Identity",
+          "2": "Logo Design",
+          "3": "Brand Guidelines",
+          "4": "Visual Design"
+        },
+        "imageAlt": "Orkinz Brand Identity Project",
+        "galleryAlt": "Orkinz Brand Identity - Image {index}"
+      }
+    }
+  },
+  "serviceDetail": {
+    "meta": {
+      "servicesLabel": "Services"
+    },
+    "sections": {
+      "overview": "Overview",
+      "features": "What We Offer",
+      "process": "Our Process",
+      "benefits": "Why Choose Us",
+      "tools": "Tools & Technologies",
+      "relatedProjects": "Related Projects"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Let's discuss how we can help your business grow",
+      "button": "Contact Us"
+    },
+    "data": {
+      "softwareDevelopment": {
+        "title": "Software Development",
+        "subtitle": "Custom software solutions tailored to your business needs",
+        "description": "We create cutting-edge software applications that drive business growth and digital transformation. Our expert team delivers scalable, secure, and high-performance solutions using the latest technologies and best practices.",
+        "features": {
+          "1": "Custom Web Applications",
+          "2": "Mobile App Development",
+          "3": "Cloud-Native Solutions",
+          "4": "API Development & Integration",
+          "5": "Database Design & Optimization",
+          "6": "Legacy System Modernization"
+        },
+        "process": {
+          "1": {
+            "step": "01",
+            "title": "Discovery & Planning",
+            "description": "We analyze your requirements and create a comprehensive development roadmap"
+          },
+          "2": {
+            "step": "02",
+            "title": "Design & Architecture",
+            "description": "Our team designs scalable architecture and intuitive user interfaces"
+          },
+          "3": {
+            "step": "03",
+            "title": "Development & Testing",
+            "description": "Agile development with continuous testing and quality assurance"
+          },
+          "4": {
+            "step": "04",
+            "title": "Deployment & Support",
+            "description": "Smooth deployment with ongoing maintenance and support"
+          }
+        },
+        "benefits": {
+          "1": "Increased operational efficiency",
+          "2": "Scalable and future-proof solutions",
+          "3": "Reduced development time and costs",
+          "4": "Enhanced user experience",
+          "5": "24/7 technical support"
+        },
+        "tools": {
+          "1": "React",
+          "2": "Node.js",
+          "3": "Python",
+          "4": "AWS",
+          "5": "Docker",
+          "6": "PostgreSQL"
+        },
+        "projects": {
+          "1": {
+            "title": "E-commerce Platform"
+          },
+          "2": {
+            "title": "Healthcare Management"
+          }
+        }
+      },
+      "videoProduction": {
+        "title": "Video Production",
+        "subtitle": "Professional video content that tells your story",
+        "description": "From concept to final cut, we produce high-quality video content that engages your audience and amplifies your brand message. Our creative team handles everything from scripting to post-production.",
+        "features": {
+          "1": "Corporate Videos",
+          "2": "Commercial Production",
+          "3": "Social Media Content",
+          "4": "Event Coverage",
+          "5": "Animation & Motion Graphics",
+          "6": "Documentary Production"
+        },
+        "process": {
+          "1": {
+            "step": "01",
+            "title": "Pre-Production",
+            "description": "Concept development, scripting, storyboarding, and planning"
+          },
+          "2": {
+            "step": "02",
+            "title": "Production",
+            "description": "Professional filming with high-end equipment and experienced crew"
+          },
+          "3": {
+            "step": "03",
+            "title": "Post-Production",
+            "description": "Editing, color grading, sound design, and visual effects"
+          },
+          "4": {
+            "step": "04",
+            "title": "Delivery",
+            "description": "Final delivery in all required formats and platforms"
+          }
+        },
+        "benefits": {
+          "1": "Cinematic quality production",
+          "2": "Creative storytelling",
+          "3": "Fast turnaround times",
+          "4": "Multiple format delivery",
+          "5": "Experienced production team"
+        },
+        "tools": {
+          "1": "Premiere Pro",
+          "2": "After Effects",
+          "3": "DaVinci Resolve",
+          "4": "Cinema 4D"
+        },
+        "projects": {
+          "1": {
+            "title": "Brand Documentary"
+          },
+          "2": {
+            "title": "Product Launch Video"
+          }
+        }
+      }
+    }
+  },
+  "careersPage": {
+    "hero": {
+      "title": "Careers at Nabra",
+      "subtitle": "Be part of a creative team that's shaping the future of digital experiences",
+      "backgroundAlt": "Careers Background"
+    },
+    "benefits": {
+      "title": "Why Work With Us",
+      "subtitle": "Join a team of passionate professionals dedicated to innovation and excellence",
+      "items": {
+        "1": {
+          "icon": "🚀",
+          "title": "Innovative Projects",
+          "description": "Work on cutting-edge projects with the latest technologies"
+        },
+        "2": {
+          "icon": "🌟",
+          "title": "Growth Opportunities",
+          "description": "Continuous learning and career development programs"
+        },
+        "3": {
+          "icon": "🤝",
+          "title": "Collaborative Culture",
+          "description": "Work with talented professionals in a supportive environment"
+        },
+        "4": {
+          "icon": "⚡",
+          "title": "Flexible Working",
+          "description": "Remote and hybrid work options available"
+        },
+        "5": {
+          "icon": "💰",
+          "title": "Competitive Benefits",
+          "description": "Attractive compensation and comprehensive benefits package"
+        },
+        "6": {
+          "icon": "🎯",
+          "title": "Impactful Work",
+          "description": "Create solutions that make a real difference"
+        }
+      }
+    },
+    "form": {
+      "title": "Apply Now",
+      "subtitle": "Fill out the form below and upload your resume to join our team",
+      "success": "Thank you for your application! We'll get back to you soon.",
+      "fields": {
+        "name": {
+          "label": "Full Name *",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Email Address *",
+          "placeholder": "john@example.com"
+        },
+        "phone": {
+          "label": "Phone Number *",
+          "placeholder": "+20 111 860 0015"
+        },
+        "position": {
+          "label": "Position Applying For *",
+          "placeholder": "Select a position",
+          "options": {
+            "softwareDeveloper": "Software Developer",
+            "uiUxDesigner": "UI/UX Designer",
+            "videoEditor": "Video Editor",
+            "motionGraphics": "Motion Graphics Artist",
+            "projectManager": "Project Manager",
+            "marketingSpecialist": "Marketing Specialist",
+            "other": "Other"
+          }
+        },
+        "linkedin": {
+          "label": "LinkedIn Profile",
+          "placeholder": "https://linkedin.com/in/johndoe"
+        },
+        "portfolio": {
+          "label": "Portfolio / Website",
+          "placeholder": "https://yourportfolio.com"
+        },
+        "resume": {
+          "label": "Resume / CV *",
+          "helper": "Accepted formats: PDF, DOC, DOCX (Max 5MB)"
+        },
+        "coverLetter": {
+          "label": "Cover Letter / Message *",
+          "placeholder": "Tell us why you'd be a great fit for our team..."
+        }
+      },
+      "submit": "Submit Application"
+    }
   }
 }
